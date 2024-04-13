@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Recipes Database</title>
+        <meta name="description" content="Index">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Lexend" rel="stylesheet" type="text/css">
+    </head>
+    
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <a href="index.html" class="logo">SITE NAME</a>
+        <a class="active" href="index">Home</a>
+        <a href="form">Form</a>
+        <a href="collection">Collection</a>
+        <a href="query">Queries</a>
+    </div> 
+
+    <body>
+        <h1>Test Form:</h1>
+        <form method="post" action="/recipe">
+            Name: <input type="text" name="recipe[name]"><br>
+            Author: <input type="text" name="recipe[author]"><br>
+            ingredients_amount: <input type="number" name="recipe[ingredients_amount]"><br>
+            ingredients_object: <input type="text" name="recipe[ingredients_object]"><br>
+            <input type="submit" value="Submit">
+        </form>       
+    </body>
+</html>
