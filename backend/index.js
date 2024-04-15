@@ -33,14 +33,26 @@ app.get("/all_recipes", function(req,res) {
     
 })
 
-app.post('/recipe', function(req, res){
-    console.log("Recipe: " + JSON.stringify(req.body.recipe));
-    var newRecipe = new recipes_db(req.body.recipe);
-    
+app.post('/add_recipe', function(req, res){
+    // console.log("Recipe: " + JSON.stringify(req.body.recipe));
+    var { name, author, prep_time, cook_time, total_time, servings, category, ingredients } = req.body;
+    // var newRecipe = new recipes_db(req.body.recipe);
+
+    var newRecipe = new recipes_db({
+        name: name,
+        author: author,
+        prep_time: prep_time,
+        cook_time: cook_time,
+        total_time: total_time,
+        servings: servings,
+        category: category, // Assuming category is an array of objects as received from the form
+        ingredients: ingredients // Assuming ingredients is an array of objects as received from the form
+    });
+
     newRecipe.save().then(function(){
         res.send("Added new recipe to database!");
     }).catch(function(err){
-        res.err("Failed to add new recipe to database!");
+        res.status(500).send("Failed to add new recipe to database!" + err);
     });
 });
 

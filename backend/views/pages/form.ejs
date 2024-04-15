@@ -16,14 +16,81 @@
         <a href="all_recipes">All Recipes</a>
     </div> 
 
+    <!-- Recipe Submission Form -->
     <body>
-        <h1>Test Form:</h1>
-        <form method="post" action="/recipe">
-            Name: <input type="text" name="recipe[name]"><br>
-            Author: <input type="text" name="recipe[author]"><br>
-            ingredients_amount: <input type="number" name="recipe[ingredients_amount]"><br>
-            ingredients_object: <input type="text" name="recipe[ingredients_object]"><br>
-            <input type="submit" value="Submit">
-        </form>       
+        <h1>New Recipe</h1>
+        <form method="post" action="/add_recipe">
+
+            <!-- recipeSchema (from /databases/recipes.js) -->
+            <label for="name">Recipe Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author"><br>
+
+            <label for="prep_time">Preparation Time:</label>
+            <input type="text" id="prep_time" name="prep_time"><br>
+
+            <label for="cook_time">Cook Time:</label>
+            <input type="text" id="cook_time" name="cook_time"><br>
+
+            <label for="total_time">Total Time:</label>
+            <input type="text" id="total_time" name="total_time"><br>
+
+            <label for="servings">Servings:</label>
+            <input type="number" id="servings" name="servings"><br>
+
+            <!-- dietCategorySchema (from /databases/recipes.js) -->
+            <h2>Diet Categories:</h2>
+            <label for="dairy_free">Dairy Free:</label>
+            <input type="checkbox" id="dairy_free" name="category[dairy_free]" value="true"><br>
+            <label for="gluten_free">Gluten Free:</label>
+            <input type="checkbox" id="gluten_free" name="category[gluten_free]" value="true"><br>
+            <label for="vegetarian">Vegetarian:</label>
+            <input type="checkbox" id="vegetarian" name="category[vegetarian]" value="true"><br>
+            <label for="vegan">Vegan:</label>
+            <input type="checkbox" id="vegan" name="category[vegan]" value="true"><br>
+            <label for="contains_nuts">Contains Nuts:</label>
+            <input type="checkbox" id="contains_nuts" name="category[contains_nuts]" value="true"><br>
+            <label for="contains_eggs">Contains Eggs:</label>
+            <input type="checkbox" id="contains_eggs" name="category[contains_eggs]" value="true"><br>
+            <label for="contains_soy">Contains Soy:</label>
+            <input type="checkbox" id="contains_soy" name="category[contains_soy]" value="true"><br>
+
+            <!-- ingredientSchema (from /databases/recipes.js) -->
+            <h2>Ingredients:</h2>
+            <div id="ingredients">
+                <div class="ingredient">
+                    <label for="ingredient_name">Name:</label>
+                    <input type="text" name="ingredients[0][name]">
+                    <label for="measurement_number">Measurement Number:</label>
+                    <input type="number" name="ingredients[0][measurement_number]">
+                    <label for="measurement_unit">Measurement Unit:</label>
+                    <input type="text" name="ingredients[0][measurement_unit]">
+                </div>
+            </div>  
+
+            <!-- JavaScript will allow for dynamic adding of more ingredient fields if needed -->
+            <button type="button" onclick="addIngredient()">Add Ingredient</button><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+        <!-- JavaScript for dynamically adding more ingredient fields -->
+        <script>
+            function addIngredient() {
+                var ingredientDiv = document.createElement('div');
+                ingredientDiv.classList.add('ingredient');
+                ingredientDiv.innerHTML = `
+                    <label for="ingredient_name">Name:</label>
+                    <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][name]">
+                    <label for="measurement_number">Measurement Number:</label>
+                    <input type="number" name="ingredients[${document.querySelectorAll('.ingredient').length}][measurement_number]">
+                    <label for="measurement_unit">Measurement Unit:</label>
+                    <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][measurement_unit]">
+                `;
+                document.getElementById('ingredients').appendChild(ingredientDiv);
+            }
+        </script>
     </body>
 </html>

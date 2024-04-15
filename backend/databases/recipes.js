@@ -5,9 +5,9 @@ var dietCategorySchema = new mongoose.Schema({
     gluten_free: Boolean,
     vegan: Boolean,
     vegetarian: Boolean,
-    nut_allergy_friendly: Boolean,
-    egg_allergy_friendly: Boolean,
-    soy_allergy_friendly: Boolean
+    contains_nuts: Boolean,
+    contains_eggs: Boolean,
+    contains_soy: Boolean
 })
 
 var ingredientSchema = new mongoose.Schema({
