@@ -16,12 +16,13 @@
         <a class="active" href="all_recipes">All Recipes</a>
     </div> 
     
+    <!-- NEED TO UPDATE THIS TO PROPERLY DISPLAY ALL RECIPES -->
     <body>
         <h1>All Recipes: </h1>
             <ul>
                 <% for(recipe of recipes) { %>
                     <li>
-                        <%= recipe.name + " " + recipe.author + " " + recipe.ingredients_amount + " " + recipe.ingredients_object %> 
+                        <%= recipe.name + " "  %> 
                     </li>
                 <% } %>
             </ul>

@@ -20,10 +20,12 @@ app.get("/index", function(req, res){
     res.render("pages/index");
 });
 
+// Take user to form
 app.get("/form", function(req, res){
     res.render("pages/form");
 });
 
+// Take user to see all recipes
 app.get("/all_recipes", function(req,res) {
     recipes_db.listAllRecipes().then(function(recipes){
         res.render("pages/all_recipes", {recipes:recipes});
@@ -33,10 +35,10 @@ app.get("/all_recipes", function(req,res) {
     
 })
 
+// Post request to add new recipes into database
 app.post('/add_recipe', function(req, res){
-    // console.log("Recipe: " + JSON.stringify(req.body.recipe));
+
     var { name, author, prep_time, cook_time, total_time, servings, category, ingredients, instructions } = req.body;
-    // var newRecipe = new recipes_db(req.body.recipe);
 
     var newRecipe = new recipes_db({
         name: name,
