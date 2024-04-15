@@ -35,7 +35,7 @@ app.get("/all_recipes", function(req,res) {
 
 app.post('/add_recipe', function(req, res){
     // console.log("Recipe: " + JSON.stringify(req.body.recipe));
-    var { name, author, prep_time, cook_time, total_time, servings, category, ingredients } = req.body;
+    var { name, author, prep_time, cook_time, total_time, servings, category, ingredients, instructions } = req.body;
     // var newRecipe = new recipes_db(req.body.recipe);
 
     var newRecipe = new recipes_db({
@@ -45,8 +45,9 @@ app.post('/add_recipe', function(req, res){
         cook_time: cook_time,
         total_time: total_time,
         servings: servings,
-        category: category, // Assuming category is an array of objects as received from the form
-        ingredients: ingredients // Assuming ingredients is an array of objects as received from the form
+        category: category, // category is an array of booleans
+        ingredients: ingredients, // ingredients is an array of objects
+        instructions: instructions // ingredients is an array of strings
     });
 
     newRecipe.save().then(function(){

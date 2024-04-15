@@ -7,8 +7,8 @@ var dietCategorySchema = new mongoose.Schema({
     vegetarian: Boolean,
     contains_nuts: Boolean,
     contains_eggs: Boolean,
-    contains_soy: Boolean
-})
+    contains_soy: Boolean,
+});
 
 var ingredientSchema = new mongoose.Schema({
 
@@ -17,7 +17,11 @@ var ingredientSchema = new mongoose.Schema({
     name: String, // ex. chili powder
     measurement_number: Number, // ex. 1
     measurement_unit: String, // ex. Tbsp
-})
+});
+
+var instructionsSchema = new mongoose.Schema({
+    step: String,
+});
 
 var recipeSchema = new mongoose.Schema({
     name: String,
@@ -28,6 +32,7 @@ var recipeSchema = new mongoose.Schema({
     servings: Number,
     category: [dietCategorySchema],
     ingredients: [ingredientSchema],
+    instructions: [instructionsSchema],
 });
 
 recipeSchema.statics.listAllRecipes = function() {
