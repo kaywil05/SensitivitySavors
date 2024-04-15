@@ -15,7 +15,7 @@ var ingredientSchema = new mongoose.Schema({
     // ex. 1 Tbsp chili powder
 
     name: String, // ex. chili powder
-    measurement_number: Number, // ex. 1
+    measurement_number: String, // ex. 1 - needs to be string to allow for decimals
     measurement_unit: String, // ex. Tbsp
 });
 
