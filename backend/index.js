@@ -38,11 +38,12 @@ app.get("/all_recipes", function(req,res) {
 // Post request to add new recipes into database
 app.post('/add_recipe', function(req, res){
 
-    var { name, author, prep_time, cook_time, total_time, servings, category, ingredients, instructions } = req.body;
+    var { name, author, image, prep_time, cook_time, total_time, servings, category, ingredients, instructions } = req.body;
 
     var newRecipe = new recipes_db({
         name: name,
         author: author,
+        image_url: image_url,
         prep_time: prep_time,
         cook_time: cook_time,
         total_time: total_time,

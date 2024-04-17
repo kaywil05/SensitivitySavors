@@ -28,6 +28,9 @@
             <label for="author">Author:</label>
             <input type="text" id="author" name="author"><br>
 
+            <label for="image_url">Image URL:</label>
+            <input type="text" id="image_url" name="image_url"><br>
+
             <label for="prep_time">Preparation Time:</label>
             <input type="text" id="prep_time" name="prep_time"><br>
 
@@ -62,11 +65,13 @@
             <div id="ingredients">
                 <div class="ingredient">
                     <label for="ingredient_name">Name:</label>
-                    <input type="text" name="ingredients[0][name]">
+                    <input type="text" name="ingredients[0][name]"><br>
                     <label for="measurement_number">Measurement Number:</label>
-                    <input type="text" name="ingredients[0][measurement_number]">
+                    <input type="text" name="ingredients[0][measurement_number]"><br>
                     <label for="measurement_unit">Measurement Unit:</label>
-                    <input type="text" name="ingredients[0][measurement_unit]">
+                    <input type="text" name="ingredients[0][measurement_unit]"><br>
+                    <label for="parenthesis_note">Optional Note (displayed in parenthesis):</label>
+                    <input type="text" name="ingredients[0][parenthesis_note]"><br>
                 </div>
             </div>  
 
@@ -96,11 +101,13 @@
                 ingredientDiv.classList.add('ingredient');
                 ingredientDiv.innerHTML = `
                     <label for="ingredient_name">Name:</label>
-                    <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][name]">
+                    <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][name]"><br>
                     <label for="measurement_number">Measurement Number:</label>
-                    <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][measurement_number]">
+                    <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][measurement_number]"><br>
                     <label for="measurement_unit">Measurement Unit:</label>
-                    <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][measurement_unit]">
+                    <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][measurement_unit]"><br>
+                    <label for="parenthesis_note">Optional Note (displayed in parenthesis):</label>
+                    <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][parenthesis_note]"><br>
                 `;
                 document.getElementById('ingredients').appendChild(ingredientDiv);
             }

@@ -12,11 +12,12 @@ var dietCategorySchema = new mongoose.Schema({
 
 var ingredientSchema = new mongoose.Schema({
 
-    // ex. 1 Tbsp chili powder
+    // ex. 1 Tbsp chili pepper (crushed)
 
-    name: String, // ex. chili powder
+    name: String, // ex. chili pepper
     measurement_number: String, // ex. 1 - needs to be string to allow for decimals
     measurement_unit: String, // ex. Tbsp
+    parenthesis_note: String, // (crushed)
 });
 
 var instructionsSchema = new mongoose.Schema({
@@ -33,6 +34,7 @@ var recipeSchema = new mongoose.Schema({
     category: [dietCategorySchema],
     ingredients: [ingredientSchema],
     instructions: [instructionsSchema],
+    image_url: String,
 });
 
 recipeSchema.statics.listAllRecipes = function() {

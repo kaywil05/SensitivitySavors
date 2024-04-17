@@ -1,0 +1,333 @@
+[{
+  "_id": {
+    "$oid": "661f7f2c5e60845f94eb2528"
+  },
+  "name": "Japanese Cucumber Salad",
+  "author": "Sharon123 (food.com)",
+  "prep_time": "30 minutes",
+  "cook_time": "0 minutes",
+  "total_time": "30 minutes",
+  "servings": 4,
+  "category": [
+    {
+      "_id": {
+        "$oid": "661f7f2c5e60845f94eb2529"
+      },
+      "dairy_free": true,
+      "vegetarian": true,
+      "vegan": true
+    }
+  ],
+  "ingredients": [
+    {
+      "_id": {
+        "$oid": "661f7f2c5e60845f94eb252a"
+      },
+      "name": "thinly sliced cucumbers",
+      "measurement_number": "2",
+      "measurement_unit": "cups",
+      "parenthesis_note": "Japanese, English, or regular"
+    },
+    {
+      "_id": {
+        "$oid": "661f7f2c5e60845f94eb252b"
+      },
+      "name": "salt",
+      "measurement_number": "1/2 - 1",
+      "measurement_unit": "teaspoon",
+      "parenthesis_note": "to taste"
+    },
+    {
+      "_id": {
+        "$oid": "661f7f2c5e60845f94eb252c"
+      },
+      "name": "pepper",
+      "measurement_number": "1/4",
+      "measurement_unit": "teaspoon",
+      "parenthesis_note": ""
+    },
+    {
+      "_id": {
+        "$oid": "661f7f2c5e60845f94eb252d"
+      },
+      "name": "sugar",
+      "measurement_number": "1",
+      "measurement_unit": "tablespoon",
+      "parenthesis_note": "or slightly less honey"
+    },
+    {
+      "_id": {
+        "$oid": "661f7f2c5e60845f94eb252e"
+      },
+      "name": "soy sauce",
+      "measurement_number": "1",
+      "measurement_unit": "tablespoon",
+      "parenthesis_note": ""
+    },
+    {
+      "_id": {
+        "$oid": "661f7f2c5e60845f94eb252f"
+      },
+      "name": "rice wine vinegar",
+      "measurement_number": "1/4",
+      "measurement_unit": "cup",
+      "parenthesis_note": ""
+    },
+    {
+      "_id": {
+        "$oid": "661f7f2c5e60845f94eb2530"
+      },
+      "name": "sesame oil",
+      "measurement_number": "1",
+      "measurement_unit": "teaspoon",
+      "parenthesis_note": ""
+    },
+    {
+      "_id": {
+        "$oid": "661f7f2c5e60845f94eb2531"
+      },
+      "name": "sesame seeds",
+      "measurement_number": "2",
+      "measurement_unit": "teaspoons",
+      "parenthesis_note": ""
+    }
+  ],
+  "instructions": [
+    {
+      "_id": {
+        "$oid": "661f7f2c5e60845f94eb2532"
+      },
+      "step": "If using English or regular cucumbers, they need to be peeled, cut lengthwise, seeded and sliced into thin half moons."
+    },
+    {
+      "_id": {
+        "$oid": "661f7f2c5e60845f94eb2533"
+      },
+      "step": "In a large bowl, combine cucumbers, salt and pepper, mix well."
+    },
+    {
+      "_id": {
+        "$oid": "661f7f2c5e60845f94eb2534"
+      },
+      "step": "Add sugar(or honey), soy sauce, rice wine vinegar and sesame oil and mix well."
+    },
+    {
+      "_id": {
+        "$oid": "661f7f2c5e60845f94eb2535"
+      },
+      "step": "Sprinkle with sesame seeds and mix."
+    },
+    {
+      "_id": {
+        "$oid": "661f7f2c5e60845f94eb2536"
+      },
+      "step": "Let marinate for 20 minutes before serving."
+    },
+    {
+      "_id": {
+        "$oid": "661f7f2c5e60845f94eb2537"
+      },
+      "step": "Adjust seasonings before serving."
+    }
+  ],
+  "__v": 0,
+  "image_url": "https://cdn.loveandlemons.com/wp-content/uploads/2023/05/cucumber-salad.jpg"
+},
+{
+  "_id": {
+    "$oid": "661f81385e60845f94eb2547"
+  },
+  "name": "Cacio e Pepe (Spaghetti with Cheese and Pepper)",
+  "author": "Kiano Moju (tasty.co)",
+  "prep_time": "10 minutes",
+  "cook_time": "20 minutes",
+  "total_time": "30 minutes",
+  "servings": 4,
+  "category": [
+    {
+      "_id": {
+        "$oid": "661f81385e60845f94eb2548"
+      },
+      "vegetarian": true
+    }
+  ],
+  "ingredients": [
+    {
+      "_id": {
+        "$oid": "661f81385e60845f94eb2549"
+      },
+      "name": "salt",
+      "measurement_number": "",
+      "measurement_unit": "",
+      "parenthesis_note": "to taste"
+    },
+    {
+      "_id": {
+        "$oid": "661f81385e60845f94eb254a"
+      },
+      "name": "spaghetti",
+      "measurement_number": "1/2",
+      "measurement_unit": "pound",
+      "parenthesis_note": ""
+    },
+    {
+      "_id": {
+        "$oid": "661f81385e60845f94eb254b"
+      },
+      "name": "olive oil",
+      "measurement_number": "2",
+      "measurement_unit": "tablespoons",
+      "parenthesis_note": ""
+    },
+    {
+      "_id": {
+        "$oid": "661f81385e60845f94eb254c"
+      },
+      "name": "unsalted butter",
+      "measurement_number": "2",
+      "measurement_unit": "tablespoons",
+      "parenthesis_note": ""
+    },
+    {
+      "_id": {
+        "$oid": "661f81385e60845f94eb254d"
+      },
+      "name": "coarsely grounded black pepper",
+      "measurement_number": "2",
+      "measurement_unit": "teaspoons",
+      "parenthesis_note": ""
+    },
+    {
+      "_id": {
+        "$oid": "661f81385e60845f94eb254e"
+      },
+      "name": "grated parmesan cheese, or pecorino romano cheese",
+      "measurement_number": "4",
+      "measurement_unit": "ounces",
+      "parenthesis_note": ""
+    }
+  ],
+  "instructions": [
+    {
+      "_id": {
+        "$oid": "661f81385e60845f94eb254f"
+      },
+      "step": "Bring a large pot of salted water to a boil. Cook the pasta for 1 minute less than the package instructs, until al dente. Save 1 cup (240 ml) pasta water, then drain."
+    },
+    {
+      "_id": {
+        "$oid": "661f81385e60845f94eb2550"
+      },
+      "step": "Heat a large sauté pan over medium heat. Add the olive oil, butter, and pepper, and stir to combine."
+    },
+    {
+      "_id": {
+        "$oid": "661f81385e60845f94eb2551"
+      },
+      "step": "Stir in the reserved pasta water."
+    },
+    {
+      "_id": {
+        "$oid": "661f81385e60845f94eb2552"
+      },
+      "step": "Toss in the cooked pasta. Reduce the heat to low."
+    },
+    {
+      "_id": {
+        "$oid": "661f81385e60845f94eb2553"
+      },
+      "step": "Add the Parmesan and toss until the cheese is melted and the pasta is well-coated."
+    },
+    {
+      "_id": {
+        "$oid": "661f81385e60845f94eb2554"
+      },
+      "step": "Season with salt, if desired."
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661f825f5e60845f94eb2556"
+  },
+  "name": "5 Ingredient Black Bean Soup",
+  "author": "Gimme Some Oven",
+  "prep_time": "2 minutes",
+  "cook_time": "18 minutes",
+  "total_time": "20 minutes",
+  "servings": 4,
+  "category": [
+    {
+      "_id": {
+        "$oid": "661f825f5e60845f94eb2557"
+      },
+      "dairy_free": true,
+      "gluten_free": true,
+      "vegetarian": true,
+      "vegan": true
+    }
+  ],
+  "ingredients": [
+    {
+      "_id": {
+        "$oid": "661f825f5e60845f94eb2558"
+      },
+      "name": "black beans",
+      "measurement_number": "3 (15 oz)",
+      "measurement_unit": "cans ",
+      "parenthesis_note": "with liquid"
+    },
+    {
+      "_id": {
+        "$oid": "661f825f5e60845f94eb2559"
+      },
+      "name": "good-quality salsa",
+      "measurement_number": "1",
+      "measurement_unit": "lb",
+      "parenthesis_note": "about 2.5 cups"
+    },
+    {
+      "_id": {
+        "$oid": "661f825f5e60845f94eb255a"
+      },
+      "name": "chopped fresh cilantro",
+      "measurement_number": "1/2",
+      "measurement_unit": "cup",
+      "parenthesis_note": "loosely packed, plus extra for garnish"
+    },
+    {
+      "_id": {
+        "$oid": "661f825f5e60845f94eb255b"
+      },
+      "name": "ground cumin",
+      "measurement_number": "2",
+      "measurement_unit": "teaspoon",
+      "parenthesis_note": ""
+    },
+    {
+      "_id": {
+        "$oid": "661f825f5e60845f94eb255c"
+      },
+      "name": "garlic",
+      "measurement_number": "1",
+      "measurement_unit": "clove ",
+      "parenthesis_note": "minced"
+    }
+  ],
+  "instructions": [
+    {
+      "_id": {
+        "$oid": "661f825f5e60845f94eb255d"
+      },
+      "step": "Stir all ingredients together in a medium saucepan. Heat over medium-high heat until simmering. Reduce heat to medium-low, cover and simmer for at least 10 minutes, stirring occasionally."
+    },
+    {
+      "_id": {
+        "$oid": "661f825f5e60845f94eb255e"
+      },
+      "step": "Serve soup warm topped with additional fresh cilantro as garnish."
+    }
+  ],
+  "__v": 0
+}]
