@@ -21,12 +21,17 @@
     <!-- NEED TO UPDATE THIS TO PROPERLY DISPLAY ALL RECIPES -->
     <body>
         <h1>All Recipes: </h1>
-            <ul>
-                <% for(recipe of recipes) { %>
-                    <li>
-                        <%= recipe.name + " "  %> 
-                    </li>
-                <% } %>
-            </ul>
+        <div class="recipes-grid">
+            <% recipes.forEach(recipe => { %>
+                <a href="/recipe/<%= recipe._id %>" class="recipe-link">
+                    <div class="recipe-item">
+                        <div class="image-container">
+                            <img src="<%= recipe.image_url %>" alt="<%= recipe.name %>">
+                        </div>
+                        <p><%= recipe.name %></p>
+                    </div>
+                </a>
+            <%}) %>
+        </div>
     </body>
 </html>

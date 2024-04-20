@@ -59,3 +59,34 @@ body {
     color: #D81B60;
     border-bottom: 2px solid #D81B60;
 }
+
+/* Define grid layout */
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Gap between grid items */
+}
+
+.recipe-item {
+    text-align: center;
+    color: black;
+}
+
+.recipe-link {
+    text-decoration: none; /*remove default underline */
+}
+
+.recipe-item:hover {
+    background-color: #45a049;
+}
+
+.recipe-item .image-container {
+    padding: 10px;
+}
+
+.image-container img {
+    max-width: 100%; /*ensure images dont exceed container*/
+    height: auto;
+    /* padding: 10px; */
+    /* border: 5px solid black; black boarder around images */
+}
