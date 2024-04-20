@@ -1,3 +1,61 @@
 body {
     font-family: "Lexend";
 }
+
+/* Add a background color to the logo navigation */
+.logonav {
+    font-family: Jazz-LET, fantasy;
+    /* background-color: #1E88E5; */
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid black;
+}
+.logonav h1{
+    text-align: center;
+}
+.logonav a {
+    float: left; 
+    color: #1E88E5;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+    font-size: 27px;
+}
+
+/* Add a background color to the top navigation */
+.nav {
+    /* background-color: #BDB5D5; */
+    overflow: hidden;
+    display: flex;
+    /* border-bottom: 2px solid black;
+    border-top: 2px solid black; */
+    /* justify-content: center; */
+}
+.nav h1{
+    text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+    float: left; 
+    color: rgb(22, 22, 22);
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+    /* background-color: #FFFF8F; */
+    color: #FFC107;
+}
+
+/* Add a color to the active/current link */
+.nav a.active {
+    /* background-color: #40B5AD; */
+    color: #D81B60;
+    border-bottom: 2px solid #D81B60;
+}
