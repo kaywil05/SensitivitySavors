@@ -90,3 +90,85 @@ body {
     /* padding: 10px; */
     /* border: 5px solid black; black boarder around images */
 }
+
+/**             FORM PAGE                **/
+/* inspo from: https://formbold.com/templates/quiz-form */
+/* Form Container Styles */
+.form-container {
+    max-width: 600px;
+    margin: 50px auto; /* center container horizontally */
+    padding: 30px; /* add padding inside container */
+    background-color: #fff; /* White background color */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* adds box with small shadow for all container */
+}
+
+.form-container h1 {
+    text-align: center;
+    color: orange; /* Orange heading color */
+    margin-bottom: 30px;
+    font-family: Jazz-LET, fantasy;
+}
+
+/* Styling for labels within the form container */
+.form-container label {
+    display: block;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin-bottom: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Light gray border on text box */
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Apply a smooth transition effect to the border color */
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="number"]:focus,
+/* when you hover over box */
+.form-container textarea:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: orange; /* Orange border color on focus */
+}
+
+.form-container input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.form-container button[type="submit"] {
+    background-color: orange; /* Orange button background color */
+    color: black; /* Yellow button text color */
+}
+
+.form-container button[type="submit"]:hover,
+.form-container button[type="button"]:hover {
+    background-color: yellow; /* Yellow background color on hover */
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+    .form-container input,
+    .form-container textarea {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+}

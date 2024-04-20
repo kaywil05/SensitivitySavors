@@ -1,129 +1,122 @@
-<html>
-    <head>
-        <title>Recipes Database</title>
-        <meta name="description" content="Index">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css?family=Lexend" rel="stylesheet" type="text/css">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes Database - New Recipe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend" rel="stylesheet" type="text/css">
+</head>
+<body>
 
-    <!-- Navigation Bar -->
-    <div class="logonav">
-        <a href="index" class="logo">Sensitivity Savors</a>
-    </div>
-    <div class="nav">
-        <a href="index">Home</a>
-        <a class="active" href="form">Form</a>
-        <a href="all_recipes">All Recipes</a>
-    </div> 
+<!-- Navigation Bar -->
+<div class="logonav">
+    <a href="index" class="logo">Sensitivity Savors</a>
+</div>
+<div class="nav">
+    <a href="index">Home</a>
+    <a class="active" href="form">Form</a>
+    <a href="all_recipes">All Recipes</a>
+</div>
 
-    <!-- Recipe Submission Form -->
-    <body>
-        <h1>New Recipe</h1>
-        <form method="post" action="/add_recipe">
+<!-- Recipe Submission Form -->
+<div class="form-container">
+    <h1>New Recipe</h1>
+    <form method="post" action="/add_recipe">
+        <!-- recipeSchema (from /databases/recipes.js) -->
+        <label for="name">Recipe Name:</label>
+        <input type="text" id="name" name="name" required><br>
 
-            <!-- recipeSchema (from /databases/recipes.js) -->
-            <label for="name">Recipe Name:</label>
-            <input type="text" id="name" name="name" required><br>
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author"><br>
 
-            <label for="author">Author:</label>
-            <input type="text" id="author" name="author"><br>
+        <label for="image_url">Image URL:</label>
+        <input type="text" id="image_url" name="image_url"><br>
 
-            <label for="image_url">Image URL:</label>
-            <input type="text" id="image_url" name="image_url"><br>
+        <label for="prep_time">Preparation Time:</label>
+        <input type="text" id="prep_time" name="prep_time"><br>
 
-            <label for="prep_time">Preparation Time:</label>
-            <input type="text" id="prep_time" name="prep_time"><br>
+        <label for="cook_time">Cook Time:</label>
+        <input type="text" id="cook_time" name="cook_time"><br>
 
-            <label for="cook_time">Cook Time:</label>
-            <input type="text" id="cook_time" name="cook_time"><br>
+        <label for="total_time">Total Time:</label>
+        <input type="text" id="total_time" name="total_time"><br>
 
-            <label for="total_time">Total Time:</label>
-            <input type="text" id="total_time" name="total_time"><br>
+        <label for="servings">Servings:</label>
+        <input type="number" id="servings" name="servings"><br>
 
-            <label for="servings">Servings:</label>
-            <input type="number" id="servings" name="servings"><br>
+        <!-- dietCategorySchema (from /databases/recipes.js) -->
+        <h2>Diet Categories:</h2>
+        <label><input type="checkbox" name="category[dairy_free]" value="true"> Dairy Free</label><br>
+        <label><input type="checkbox" name="category[gluten_free]" value="true"> Gluten Free</label><br>
+        <label><input type="checkbox" name="category[vegetarian]" value="true"> Vegetarian</label><br>
+        <label><input type="checkbox" name="category[vegan]" value="true"> Vegan</label><br>
+        <label><input type="checkbox" name="category[contains_nuts]" value="true"> Contains Nuts</label><br>
+        <label><input type="checkbox" name="category[contains_eggs]" value="true"> Contains Eggs</label><br>
+        <label><input type="checkbox" name="category[contains_soy]" value="true"> Contains Soy</label><br>
 
-            <!-- dietCategorySchema (from /databases/recipes.js) -->
-            <h2>Diet Categories:</h2>
-            <label for="dairy_free">Dairy Free:</label>
-            <input type="checkbox" id="dairy_free" name="category[dairy_free]" value="true"><br>
-            <label for="gluten_free">Gluten Free:</label>
-            <input type="checkbox" id="gluten_free" name="category[gluten_free]" value="true"><br>
-            <label for="vegetarian">Vegetarian:</label>
-            <input type="checkbox" id="vegetarian" name="category[vegetarian]" value="true"><br>
-            <label for="vegan">Vegan:</label>
-            <input type="checkbox" id="vegan" name="category[vegan]" value="true"><br>
-            <label for="contains_nuts">Contains Nuts:</label>
-            <input type="checkbox" id="contains_nuts" name="category[contains_nuts]" value="true"><br>
-            <label for="contains_eggs">Contains Eggs:</label>
-            <input type="checkbox" id="contains_eggs" name="category[contains_eggs]" value="true"><br>
-            <label for="contains_soy">Contains Soy:</label>
-            <input type="checkbox" id="contains_soy" name="category[contains_soy]" value="true"><br>
+        <!-- ingredientSchema (from /databases/recipes.js) -->
+        <h2>Ingredients:</h2>
+        <div id="ingredients">
+            <div class="ingredient">
+                <label for="ingredient_name">Name:</label>
+                <input type="text" name="ingredients[0][name]"><br>
+                <label for="measurement_number">Measurement Number:</label>
+                <input type="text" name="ingredients[0][measurement_number]"><br>
+                <label for="measurement_unit">Measurement Unit:</label>
+                <input type="text" name="ingredients[0][measurement_unit]"><br>
+                <label for="parenthesis_note">Optional Note (displayed in parenthesis):</label>
+                <input type="text" name="ingredients[0][parenthesis_note]"><br>
+            </div>
+        </div>  
 
-            <!-- ingredientSchema (from /databases/recipes.js) -->
-            <h2>Ingredients:</h2>
-            <div id="ingredients">
-                <div class="ingredient">
-                    <label for="ingredient_name">Name:</label>
-                    <input type="text" name="ingredients[0][name]"><br>
-                    <label for="measurement_number">Measurement Number:</label>
-                    <input type="text" name="ingredients[0][measurement_number]"><br>
-                    <label for="measurement_unit">Measurement Unit:</label>
-                    <input type="text" name="ingredients[0][measurement_unit]"><br>
-                    <label for="parenthesis_note">Optional Note (displayed in parenthesis):</label>
-                    <input type="text" name="ingredients[0][parenthesis_note]"><br>
-                </div>
-            </div>  
+        <!-- JavaScript will allow for dynamic adding of more ingredient fields if needed -->
+        <button type="button" onclick="addIngredient()">Add Ingredient</button><br>
 
-            <!-- JavaScript will allow for dynamic adding of more ingredient fields if needed -->
-            <button type="button" onclick="addIngredient()">Add Ingredient</button><br>
+        <!-- instructionsSchema (from /databases/recipes.js) -->
+        <h2>Instructions:</h2>
+        <div id="instructions">
+            <div class="instruction">
+                <label for="instruction">Step 1:</label>
+                <textarea name="instructions[0][step]"></textarea>
+            </div>
+        </div>
 
-            <!-- instructionsSchema (from /databases/recipes.js) -->
-            <h2>Instructions:</h2>
-                <div id="instructions">
-                    <div class="instruction">
-                        <label for="instruction">Step 1:</label>
-                        <textarea name="instructions[0][step]"></textarea>
-                    </div>
-                </div>
-
-            <!-- Button to add more instructions -->
-            <button type="button" onclick="addInstruction()">Add Instruction</button><br>
-            
-            <button type="submit">Submit</button>
-        </form>
+        <!-- Button to add more instructions -->
+        <button type="button" onclick="addInstruction()">Add Instruction</button><br>
         
-        
-        <script>
-            // function for dynamically adding more ingredient fields
-            function addIngredient() {
-                var ingredientDiv = document.createElement('div');
-                ingredientDiv.classList.add('ingredient');
-                ingredientDiv.innerHTML = `
-                    <label for="ingredient_name">Name:</label>
-                    <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][name]"><br>
-                    <label for="measurement_number">Measurement Number:</label>
-                    <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][measurement_number]"><br>
-                    <label for="measurement_unit">Measurement Unit:</label>
-                    <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][measurement_unit]"><br>
-                    <label for="parenthesis_note">Optional Note (displayed in parenthesis):</label>
-                    <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][parenthesis_note]"><br>
-                `;
-                document.getElementById('ingredients').appendChild(ingredientDiv);
-            }
+        <button type="submit">Submit</button>
+    </form>
+</div>
 
-            // function for dynamically adding more instruction fields
-            function addInstruction() {
-                var instructionDiv = document.createElement('div');
-                instructionDiv.classList.add('instruction');
-                instructionDiv.innerHTML = `
-                    <label for="instruction">Step ${document.querySelectorAll('.instruction').length + 1}:</label>
-                    <textarea name="instructions[${document.querySelectorAll('.instruction').length}][step]"></textarea>
-                `;
-                document.getElementById('instructions').appendChild(instructionDiv);
+<!-- JavaScript for adding dynamic fields -->
+<script>
+    function addIngredient() {
+        var ingredientDiv = document.createElement('div');
+        ingredientDiv.classList.add('ingredient');
+        ingredientDiv.innerHTML = `
+            <label for="ingredient_name">Name:</label>
+            <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][name]"><br>
+            <label for="measurement_number">Measurement Number:</label>
+            <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][measurement_number]"><br>
+            <label for="measurement_unit">Measurement Unit:</label>
+            <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][measurement_unit]"><br>
+            <label for="parenthesis_note">Optional Note (displayed in parenthesis):</label>
+            <input type="text" name="ingredients[${document.querySelectorAll('.ingredient').length}][parenthesis_note]"><br>
+        `;
+        document.getElementById('ingredients').appendChild(ingredientDiv);
     }
-        </script>
-    </body>
+
+    function addInstruction() {
+        var instructionDiv = document.createElement('div');
+        instructionDiv.classList.add('instruction');
+        instructionDiv.innerHTML = `
+            <label for="instruction">Step ${document.querySelectorAll('.instruction').length + 1}:</label>
+            <textarea name="instructions[${document.querySelectorAll('.instruction').length}][step]"></textarea>
+        `;
+        document.getElementById('instructions').appendChild(instructionDiv);
+    }
+</script>
+
+</body>
 </html>
