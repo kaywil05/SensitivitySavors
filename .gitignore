@@ -130,4 +130,6 @@ dist
 .pnp.*
 
 # ignore hidden folders
-.DS_Store/
+.DS_Store
+**/.DS_Store
+faq_bot/huggingface_cache/

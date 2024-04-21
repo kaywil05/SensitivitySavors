@@ -8,19 +8,15 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-os.environ['TRANSFORMERS_CACHE'] = '../huggingface_cache/model_cache'
-os.environ['HF_DATASETS_CACHE'] = '../huggingface_cache/data_cache'
+# os.environ['TRANSFORMERS_CACHE'] = '../huggingface_cache/model_cache'
+# os.environ['HF_DATASETS_CACHE'] = '../huggingface_cache/data_cache'
 
 
 def load_data():
-    data_path = Path("../../data/pairs1.csv")
+    data_path = Path("../../data/questions_answers.csv")
     data = pd.read_csv(data_path, index_col='Unnamed: 0')
     data.head()
     return data
-
-
-def remove_number_start(sentence):
-    return re.sub('[0-9]+\.\ ', '', sentence)
 
 
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -65,18 +61,17 @@ class FAQBot:
         else:
             ans = self.general_model(question, do_sample=True, min_length=10, max_new_tokens=100)[0]
             result['Score'] = best_score
-            result['Answer'] = ans['generated_text'].split('\n\n')[1]
+            result['Answer'] = ans['generated_text']
         return result
 
 
 
 def load_all_models():
 
-    qa_model = SentenceTransformer('sentence-transformers/multi-qa-MiniLM-L6-cos-v1')
+    qa_model = SentenceTransformer('sentence-transformers/multi-qa-MiniLM-L6-cos-v1', cache_folder="../../huggingface_cache")
     general_model = pipeline('text-generation', model='EleutherAI/gpt-neo-1.3B', device=DEVICE)
 
     data = load_data()
-    data['q'] = data['q'].apply(remove_number_start)
 
     faq_bot = FAQBot(
         qa_model=qa_model,
@@ -85,5 +80,3 @@ def load_all_models():
         threshold=0.6,
     )
     return faq_bot
-
-# print(faq_bot.get_answer("What is your purpose?"))
