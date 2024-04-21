@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from contextlib import asynccontextmanager
 import os
 from model import load_all_models
-os.environ['TRANSFORMERS_CACHE'] = '../../huggingface_cache/model_cache'
+os.environ['HF_HOME'] = '../../huggingface_cache/model_cache'
 os.environ['HF_DATASETS_CACHE'] = '../../huggingface_cache/data_cache'
 
 
