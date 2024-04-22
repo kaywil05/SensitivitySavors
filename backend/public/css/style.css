@@ -103,6 +103,8 @@ body {
 
 .image-container2 {
     max-width: 600px; /* Set a maximum width for the container */
+    margin: 0 auto; /*centers horizontally*/
+
 }
 
 .container {
