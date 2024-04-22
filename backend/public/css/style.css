@@ -1,5 +1,8 @@
 body {
-    font-family: "Lexend";
+    font-family: 'Lexend', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
 }
 
 /* Add a background color to the logo navigation */
@@ -153,7 +156,7 @@ body {
 }
 
 .form-container button[type="submit"] {
-    background-color: #D81B60; /* Orange button background color */
+    background-color: #D81B60; /* pink button background color */
     color: black; /* Yellow button text color */
 }
 
@@ -170,5 +173,80 @@ body {
     .form-container textarea {
         padding: 10px;
         margin-bottom: 15px;
+    }
+}
+
+/***** index.ejs ******/
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1 {
+    color: #D81B60; /* Pink heading color */
+}
+h2 {
+    color: #45a049; /* Green heading color */
+}
+p {
+    line-height: 1.6;
+}
+.feature-list {
+    text-align: left;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+ul {
+    padding-left: 20px;
+}
+
+/* Style for the about section */
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Team Members Container Styling */
+.team-members-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Team Member Styling */
+.team-member {
+    flex: 0 0 calc(25% - 40px);
+    max-width: calc(25% - 40px);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h2 {
+    color: #333;
+}
+
+.team-member p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex-basis: 100%;
+        max-width: 100%;
     }
 }
