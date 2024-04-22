@@ -91,6 +91,23 @@ body {
     /* border: 5px solid black; black boarder around images */
 }
 
+.image-container2 img {
+    max-width: 100%; /*ensure images dont exceed container*/
+    height: auto;
+    /* padding: 10px; */
+    /* border: 5px solid black; black boarder around images */
+}
+
+.image-container2 {
+    max-width: 600px; /* Set a maximum width for the container */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto; /*centers horizontally*/
+    padding: 0 50px;
+}
+
 .filter-button {
     text-align: right;
     margin-bottom: 20px;
@@ -103,6 +120,8 @@ body {
     background-color: #4CAF50;
     color: white;
     text-decoration: none;
+    line-height: 30px;
+    height: 30px;
 }
 
 /**             FORM PAGE                **/

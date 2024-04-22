@@ -20,12 +20,18 @@
     
     <!-- NEED TO UPDATE THIS TO PROPERLY DISPLAY RECIPE -->
     <body>
-        <h1><%= recipe.name %>: </h1>
-        <img src="<%= recipe.image_url %>" alt="<%= recipe.name %>">
-        <p>Author: <%= recipe.author %></p>
-        <p>Prep Time: <%= recipe.prep_time %></p>
-        <p>Cook Time: <%= recipe.cook_time %></p>
-        <p>Total Time: <%= recipe.total_time %></p>
-        <p>Servings: <%= recipe.servings %></p>
+        <div class="container">
+        
+            <h1><%= recipe.name %>: </h1>
+            <p>Author: <%= recipe.author %></p>
+            <div class="image-container2">
+                <img src="<%= recipe.image_url %>" alt="<%= recipe.name %>">
+            </div>
+            <p>Prep Time: <%= recipe.prep_time %></p>
+            <p>Cook Time: <%= recipe.cook_time %></p>
+            <p>Total Time: <%= recipe.total_time %></p>
+            <p>Servings: <%= recipe.servings %></p>
+
+        </div>
     </body>
 </html>

@@ -20,11 +20,6 @@ app.get("/index", function(req, res){
     res.render("pages/index");
 });
 
-//test
-app.get("/test", function(req, res){
-    res.render("pages/test");
-});
-
 // Take user to form
 app.get("/form", function(req, res){
     res.render("pages/form");
