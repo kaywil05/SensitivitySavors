@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Recipes Database</title>
+        <meta name="description" content="Index">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Lexend" rel="stylesheet" type="text/css">
+    </head>
+
+    <!-- Navigation Bar -->
+    <div class="logonav">
+        <a href="index" class="logo">Sensitivity Savors</a>
+    </div>
+    <div class="nav">
+        <a href="/index">Home</a>
+        <a href="/form">Form</a>
+        <a href="/all_recipes">All Recipes</a>
+    </div>  
+    
+    <!-- NEED TO UPDATE THIS TO PROPERLY DISPLAY RECIPE -->
+    <body>
+        <h1><%= recipe.name %>: </h1>
+        <img src="<%= recipe.image_url %>" alt="<%= recipe.name %>">
+        <p>Author: <%= recipe.author %></p>
+        <p>Prep Time: <%= recipe.prep_time %></p>
+        <p>Cook Time: <%= recipe.cook_time %></p>
+        <p>Total Time: <%= recipe.total_time %></p>
+        <p>Servings: <%= recipe.servings %></p>
+    </body>
+</html>

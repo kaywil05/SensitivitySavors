@@ -20,6 +20,11 @@ app.get("/index", function(req, res){
     res.render("pages/index");
 });
 
+//test
+app.get("/test", function(req, res){
+    res.render("pages/test");
+});
+
 // Take user to form
 app.get("/form", function(req, res){
     res.render("pages/form");
@@ -57,6 +62,13 @@ app.post('/add_recipe', function(req, res){
         res.send("Added new recipe to database!");
     }).catch(function(err){
         res.status(500).send("Failed to add new recipe to database!" + err);
+    });
+});
+
+// grab individual recipe id and display all recipe info from database
+app.get('/recipe_details/:recipeId', function(req, res) {
+    recipes_db.findById(req.params.recipeId).then(function(recipe){
+        res.render("pages/recipe_details", {recipe:recipe});
     });
 });
 

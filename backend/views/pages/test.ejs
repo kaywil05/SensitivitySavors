@@ -20,22 +20,7 @@
     
     <!-- NEED TO UPDATE THIS TO PROPERLY DISPLAY ALL RECIPES -->
     <body>
-        <div class="filter-button">
-            <a href="#" class="filter-link">Filter</a>
-        </div>
         <h1>All Recipes: </h1>
         
-        <div class="recipes-grid">
-            <% recipes.forEach(recipe => { %>
-                <a href="recipe_details/<%= recipe._id %>" class="recipe-link">
-                    <div class="recipe-item">
-                        <div class="image-container">
-                            <img src="<%= recipe.image_url %>" alt="<%= recipe.name %>">
-                        </div>
-                        <p><%= recipe.name %></p>
-                    </div>
-                </a>
-            <%}) %>
-        </div>
     </body>
 </html>

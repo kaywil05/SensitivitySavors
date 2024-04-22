@@ -59,7 +59,7 @@ body {
     color: #D81B60;
     border-bottom: 2px solid #D81B60;
 }
-
+/* ALL RECIPES DISPLAY PAGE */
 /* Define grid layout */
 .recipes-grid {
     display: grid;
@@ -89,6 +89,20 @@ body {
     height: auto;
     /* padding: 10px; */
     /* border: 5px solid black; black boarder around images */
+}
+
+.filter-button {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.filter-link{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px; /*Adjust for rounding */
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
 }
 
 /**             FORM PAGE                **/
