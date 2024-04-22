@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from contextlib import asynccontextmanager
 import os
 from model import load_all_models
-os.environ['TRANSFORMERS_CACHE'] = '../../huggingface_cache/model_cache'
+os.environ['HF_HOME'] = '../../huggingface_cache/model_cache'
 os.environ['HF_DATASETS_CACHE'] = '../../huggingface_cache/data_cache'
 
 
@@ -11,10 +11,9 @@ os.environ['HF_DATASETS_CACHE'] = '../../huggingface_cache/data_cache'
 
 class QItem(BaseModel):
     question: str
-    
+
 
 faq_model = None
-
 
 
 @asynccontextmanager
@@ -26,21 +25,21 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
-@app.get("/")
-def root():
-    return {"message": "Hello World"}
+# @app.get("/")
+# def root():
+#     return {"message": "Hello World"}
 
-@app.get("/{question}")
+@app.get("/query={question}")
 def handle_question(question: str):
-    return {'answer': "My name is Phuong."}
+    q = question
+    ans = faq_model.get_answer(q)
+    return ans
 
 
-@app.post("/get_answer/")
-async def get_body(request: QItem):
-    q = request.question
-
-    a = faq_model.get_answer(q)
-   
-    return a
+# @app.post("/get_answer/")
+# async def get_body(request: QItem):
+#     q = request.question
+#     a = faq_model.get_answer(q)
+#     return a
 
 

@@ -119,7 +119,7 @@ body {
 
 .form-container h1 {
     text-align: center;
-    color: orange; /* Orange heading color */
+    color: #D81B60; /* Orange heading color */
     margin-bottom: 30px;
     font-family: Jazz-LET, fantasy;
 }
@@ -149,7 +149,7 @@ body {
 /* when you hover over box */
 .form-container textarea:focus {
     outline: none; /* Remove the default focus outline */
-    border-color: orange; /* Orange border color on focus */
+    border-color: #D81B60; /* Orange border color on focus */
 }
 
 .form-container input[type="checkbox"] {
@@ -167,13 +167,13 @@ body {
 }
 
 .form-container button[type="submit"] {
-    background-color: orange; /* Orange button background color */
+    background-color: #D81B60; /* Orange button background color */
     color: black; /* Yellow button text color */
 }
 
 .form-container button[type="submit"]:hover,
 .form-container button[type="button"]:hover {
-    background-color: yellow; /* Yellow background color on hover */
+    background-color: #FFC107; /* Yellow background color on hover */
 }
 
 @media (max-width: 768px) {
