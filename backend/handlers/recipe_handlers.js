@@ -10,7 +10,8 @@ async function createNewRecipe(req, res) {
     const newRecipeInfo = req.body;
     const newRecipe = await Recipe.create(newRecipeInfo);
     console.log(`Added new recipe ${newRecipe.name}`);
-    res.redirect("/")
+    // res.redirect("/")
+    res.json(newRecipe);
 }
 
 module.exports = {

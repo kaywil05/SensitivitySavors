@@ -9,8 +9,7 @@ var recipeSchema = new Schema({
     prep_time: Number, // in seconds, 
     cook_time: Number, // in seconds
     total_time: Number, // in seconds
-    servings: Number,
-    category: [{
+    categories: [{
         type: Schema.Types.ObjectId,
         require: true,
         ref: "DietCategory",
