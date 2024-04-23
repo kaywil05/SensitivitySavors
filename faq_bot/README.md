@@ -12,8 +12,8 @@
 
 ## Description
 
-- The system answers users' questions about content of a website.
-- The system contains a database of Questions and Answers about the website.
+- The system answers users' questions about cuisine and healthy diet 
+- The system contains a database of Questions and Answers about the cuisine and healthy diet.
 
 ## Ideas for solution
 
