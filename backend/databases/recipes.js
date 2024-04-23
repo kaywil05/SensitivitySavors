@@ -24,12 +24,13 @@ var instructionsSchema = new mongoose.Schema({
     step: String,
 });
 
+// TODO: we will use moment package to format string to print out
 var recipeSchema = new mongoose.Schema({
     name: String,
     author: String, 
-    prep_time: String, // ex. '10 minutes'
-    cook_time: String, // ex. '25 minutes'
-    total_time: String, // ex. '35 minutes'
+    prep_time: String, // in seconds, 
+    cook_time: String, // in seconds
+    total_time: String, // in seconds
     servings: Number,
     category: [dietCategorySchema],
     ingredients: [ingredientSchema],
