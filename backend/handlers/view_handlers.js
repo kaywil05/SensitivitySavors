@@ -9,7 +9,7 @@ function formPageHandler(req, res) {
 }
 
 function recipesPageHandler(req, res) {
-    // const allRecipes = await recipeHandlers.getAllRecipes();
+    // const allRecipes = recipeHandlers.getAllRecipes();
     const allRecipes = [
         {
             _id: "dfsafs",
