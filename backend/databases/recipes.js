@@ -24,7 +24,6 @@ var instructionsSchema = new mongoose.Schema({
     step: String,
 });
 
-// TODO: we will use moment package to format string to print out
 var recipeSchema = new mongoose.Schema({
     name: String,
     author: String, 
