@@ -1,0 +1,116 @@
+[
+    {
+        "name": "thinly sliced cucumbers",
+        "quantity": 2,
+        "unit": "cups",
+        "note": "Japanese, English, or regular"
+    },
+    {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "teaspoon",
+        "note": "to taste"
+    },
+    {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "teaspoon",
+        "note": ""
+    },
+    {
+        "name": "sugar",
+        "quantity": 1,
+        "unit": "tablespoon",
+        "note": "or slightly less honey"
+    },
+    {
+        "name": "soy sauce",
+        "quantity": 1,
+        "unit": "tablespoon",
+        "note": ""
+    },
+    {
+        "name": "rice wine vinegar",
+        "quantity": 0.25,
+        "unit": "cup",
+        "note": ""
+    },
+    {
+        "name": "sesame oil",
+        "quantity": 1,
+        "unit": "teaspoon",
+        "note": ""
+    },
+    {
+        "name": "sesame seeds",
+        "quantity": 2,
+        "unit": "teaspoons",
+        "note": ""
+    },
+    {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "",
+        "note": "to taste"
+    },
+    {
+        "name": "spaghetti",
+        "quantity": 0.5,
+        "unit": "pound",
+        "note": ""
+    },
+    {
+        "name": "olive oil",
+        "quantity": 2,
+        "unit": "tablespoons",
+        "note": ""
+    },
+    {
+        "name": "unsalted butter",
+        "quantity": 2,
+        "unit": "tablespoons",
+        "note": ""
+    },
+    {
+        "name": "coarsely grounded black pepper",
+        "quantity": 2,
+        "unit": "teaspoons",
+        "note": ""
+    },
+    {
+        "name": "grated parmesan cheese, or pecorino romano cheese",
+        "quantity": 4,
+        "unit": "ounces",
+        "note": ""
+    },
+    {
+        "name": "black beans",
+        "quantity": 3,
+        "unit": "cans ",
+        "note": "with liquid"
+    },
+    {
+        "name": "good-quality salsa",
+        "quantity": 1,
+        "unit": "lb",
+        "note": "about 2.5 cups"
+    },
+    {
+        "name": "chopped fresh cilantro",
+        "quantity": 0.5,
+        "unit": "cup",
+        "note": "loosely packed, plus extra for garnish"
+    },
+    {
+        "name": "ground cumin",
+        "quantity": 2,
+        "unit": "teaspoon",
+        "note": ""
+    },
+    {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "clove ",
+        "note": "minced"
+    }
+]

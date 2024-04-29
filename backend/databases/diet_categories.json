@@ -1,0 +1,18 @@
+[
+    {
+        "dietCategory": "Vegan",
+        "description": "A vegan diet is made up of plant-based foods, such as fruits, vegetables, beans, grains, nuts, and seeds, and excludes all animal products and by-products. This includes dairy, eggs, honey, meat, poultry, and seafood."
+    },
+    {
+        "dietCategory": "Vegetarian",
+        "description": "A vegetarian diet consists of foods that mainly come from plants, such as vegetables, fruits, whole grains, legumes, seeds, and nuts. Some vegetarians also include eggs and/or milk if they are lacto-ovo vegetarian."
+    },
+    {
+        "dietCategory": "Gluten free",
+        "description": "A gluten-free diet excludes foods that contain gluten, a protein found in wheat and other grains."
+    },
+    {
+        "dietCategory": "Dairy free",
+        "description": "A dairy-free diet can include plant-based milk alternatives, yogurt, tofu, and other dairy-free foods. When choosing dairy-free products, you can look for those that are fortified with calcium, vitamin D, and protein."
+    }
+]

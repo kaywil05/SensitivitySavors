@@ -14,25 +14,8 @@ async function formPageHandler(req, res) {
     res.render("pages/newform", {categories: listCategories});
 }
 
-function recipesPageHandler(req, res) {
-    // const allRecipes = await recipeHandlers.getAllRecipes();
-    const allRecipes = [
-        {
-            _id: "dfsafs",
-            name: "fdsfsafds",
-            image_url: "fdasfs",
-        },
-        {
-            _id: "dfsafs",
-            name: "fdsfsafds",
-            image_url: "fdasfs",
-        },
-        {
-            _id: "dfsafs",
-            name: "fdsfsafds",
-            image_url: "fdasfs",
-        },
-    ]
+async function recipesPageHandler(req, res) {
+    const allRecipes = await recipeHandlers.getAllRecipes();
     res.render("pages/all_recipes", {recipes: allRecipes});
 }
 
