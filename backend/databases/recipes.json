@@ -1,0 +1,293 @@
+[
+    {
+        "name": "Japanese Cucumber Salad",
+        "author": "Sharon123 (food.com)",
+        "prep_time": 1800,
+        "cook_time": 0,
+        "total_time": 1800,
+        "categories": [
+            {
+                "_id": {
+                    "$oid": "662edd7738fb446e16cf92da"
+                },
+                "dietCategory": "Vegan",
+                "description": "A vegan diet is made up of plant-based foods, such as fruits, vegetables, beans, grains, nuts, and seeds, and excludes all animal products and by-products. This includes dairy, eggs, honey, meat, poultry, and seafood.",
+                "__v": 0
+            },
+            {
+                "_id": {
+                    "$oid": "662edd8938fb446e16cf92dc"
+                },
+                "dietCategory": "Vegetarian",
+                "description": "A vegetarian diet consists of foods that mainly come from plants, such as vegetables, fruits, whole grains, legumes, seeds, and nuts. Some vegetarians also include eggs and/or milk if they are lacto-ovo vegetarian.",
+                "__v": 0
+            },
+            {
+                "_id": {
+                    "$oid": "662eddad38fb446e16cf92e0"
+                },
+                "dietCategory": "Dairy free",
+                "description": "A dairy-free diet can include plant-based milk alternatives, yogurt, tofu, and other dairy-free foods. When choosing dairy-free products, you can look for those that are fortified with calcium, vitamin D, and protein.",
+                "__v": 0
+            }
+        ],
+        "ingredients": [
+            {
+                "_id": {
+                    "$oid": "662ee0d9c77c33566f533149"
+                },
+                "name": "thinly sliced cucumbers",
+                "quantity": 2,
+                "unit": "cups",
+                "note": "Japanese, English, or regular"
+            },
+            {
+                "_id": {
+                    "$oid": "662ede92c77c33566f533135"
+                },
+                "name": "salt",
+                "quantity": 1,
+                "unit": "teaspoon",
+                "note": "to taste"
+            },
+            {
+                "_id": {
+                    "$oid": "662ede92c77c33566f533136"
+                },
+                "name": "pepper",
+                "quantity": 0.25,
+                "unit": "teaspoon",
+                "note": ""
+            },
+            {
+                "_id": {
+                    "$oid": "662ede92c77c33566f533137"
+                },
+                "name": "sugar",
+                "quantity": 1,
+                "unit": "tablespoon",
+                "note": "or slightly less honey"
+            },
+            {
+                "_id": {
+                    "$oid": "662ede92c77c33566f533138"
+                },
+                "name": "soy sauce",
+                "quantity": 1,
+                "unit": "tablespoon",
+                "note": ""
+            },
+            {
+                "_id": {
+                    "$oid": "662ede92c77c33566f533139"
+                },
+                "name": "rice wine vinegar",
+                "quantity": 1,
+                "unit": "cup",
+                "note": ""
+            },
+            {
+                "_id": {
+                    "$oid": "662ede92c77c33566f53313a"
+                },
+                "name": "sesame oil",
+                "quantity": 1,
+                "unit": "teaspoon",
+                "note": ""
+            },
+            {
+                "_id": {
+                    "$oid": "662ede92c77c33566f53313b"
+                },
+                "name": "sesame seeds",
+                "quantity": 1,
+                "unit": "teaspoons",
+                "note": ""
+            }
+        ],
+        "instructions": [
+            "If using English or regular cucumbers, they need to be peeled, cut lengthwise, seeded and sliced into thin half moons.",
+            "In a large bowl, combine cucumbers, salt and pepper, mix well.",
+            "Add sugar(or honey), soy sauce, rice wine vinegar and sesame oil and mix well.",
+            "Sprinkle with sesame seeds and mix.",
+            "Let marinate for 20 minutes before serving.",
+            "Adjust seasonings before serving."
+        ],
+        "image_url": "https://cdn.loveandlemons.com/wp-content/uploads/2023/05/cucumber-salad.jpg"
+    },
+    {
+        "name": "Cacio e Pepe (Spaghetti with Cheese and Pepper)",
+        "author": "Kiano Moju (tasty.co)",
+        "prep_time": 600,
+        "cook_time": 1200,
+        "total_time": 1800,
+        "categories": [
+            {
+                "_id": {
+                    "$oid": "662edd8938fb446e16cf92dc"
+                },
+                "dietCategory": "Vegetarian",
+                "description": "A vegetarian diet consists of foods that mainly come from plants, such as vegetables, fruits, whole grains, legumes, seeds, and nuts. Some vegetarians also include eggs and/or milk if they are lacto-ovo vegetarian.",
+                "__v": 0
+            }
+        ],
+        "ingredients": [
+            {
+                "_id": {
+                    "$oid": "662ee0d9c77c33566f533151"
+                },
+                "name": "salt",
+                "quantity": 1,
+                "unit": "",
+                "note": "to taste"
+            },
+            {
+                "_id": {
+                    "$oid": "662ee0d9c77c33566f533152"
+                },
+                "name": "spaghetti",
+                "quantity": 0.5,
+                "unit": "pound",
+                "note": ""
+            },
+            {
+                "_id": {
+                    "$oid": "662ee0d9c77c33566f533153"
+                },
+                "name": "olive oil",
+                "quantity": 2,
+                "unit": "tablespoons",
+                "note": ""
+            },
+            {
+                "_id": {
+                    "$oid": "662ee0d9c77c33566f533154"
+                },
+                "name": "unsalted butter",
+                "quantity": 2,
+                "unit": "tablespoons",
+                "note": ""
+            },
+            {
+                "_id": {
+                    "$oid": "662ee0d9c77c33566f533155"
+                },
+                "name": "coarsely grounded black pepper",
+                "quantity": 2,
+                "unit": "teaspoons",
+                "note": ""
+            },
+            {
+                "_id": {
+                    "$oid": "662ee0d9c77c33566f533156"
+                },
+                "name": "grated parmesan cheese, or pecorino romano cheese",
+                "quantity": 4,
+                "unit": "ounces",
+                "note": ""
+            }
+        ],
+        "instructions": [
+            "Bring a large pot of salted water to a boil. Cook the pasta for 1 minute less than the package instructs, until al dente. Save 1 cup (240 ml) pasta water, then drain.",
+            "Heat a large sauté pan over medium heat. Add the olive oil, butter, and pepper, and stir to combine.",
+            "Stir in the reserved pasta water.",
+            "Toss in the cooked pasta. Reduce the heat to low.",
+            "Add the Parmesan and toss until the cheese is melted and the pasta is well-coated.",
+            "Season with salt, if desired."
+        ],
+        "image_url": "https://www.seriouseats.com/thmb/px_e8tCpfU7pcNvn4-j3bzQ9kGI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/spaghetti-cacio-e-pepe-recipe-hero-02_1-70880518badb4d428f5d5b03d303fabc.JPG"
+    },
+    {
+        "name": "5 Ingredient Black Bean Soup",
+        "author": "Gimme Some Oven",
+        "prep_time": 120,
+        "cook_time": 1080,
+        "total_time": 1200,
+        "categories": [
+            {
+                "_id": {
+                    "$oid": "662edd8938fb446e16cf92dc"
+                },
+                "dietCategory": "Vegetarian",
+                "description": "A vegetarian diet consists of foods that mainly come from plants, such as vegetables, fruits, whole grains, legumes, seeds, and nuts. Some vegetarians also include eggs and/or milk if they are lacto-ovo vegetarian.",
+                "__v": 0
+            },
+            {
+                "_id": {
+                    "$oid": "662edd7738fb446e16cf92da"
+                },
+                "dietCategory": "Vegan",
+                "description": "A vegan diet is made up of plant-based foods, such as fruits, vegetables, beans, grains, nuts, and seeds, and excludes all animal products and by-products. This includes dairy, eggs, honey, meat, poultry, and seafood.",
+                "__v": 0
+            },
+            {
+                "_id": {
+                    "$oid": "662edda038fb446e16cf92de"
+                },
+                "dietCategory": "Gluten free",
+                "description": "A gluten-free diet excludes foods that contain gluten, a protein found in wheat and other grains.",
+                "__v": 0
+            },
+            {
+                "_id": {
+                    "$oid": "662eddad38fb446e16cf92e0"
+                },
+                "dietCategory": "Dairy free",
+                "description": "A dairy-free diet can include plant-based milk alternatives, yogurt, tofu, and other dairy-free foods. When choosing dairy-free products, you can look for those that are fortified with calcium, vitamin D, and protein.",
+                "__v": 0
+            }
+        ],
+        "ingredients": [
+            {
+                "_id": {
+                    "$oid": "662ee0d9c77c33566f533157"
+                },
+                "name": "black beans",
+                "quantity": 3,
+                "unit": "cans ",
+                "note": "with liquid"
+            },
+            {
+                "_id": {
+                    "$oid": "662ee0d9c77c33566f533158"
+                },
+                "name": "good-quality salsa",
+                "quantity": 1,
+                "unit": "lb",
+                "note": "about 2.5 cups"
+            },
+            {
+                "_id": {
+                    "$oid": "662ee0d9c77c33566f533159"
+                },
+                "name": "chopped fresh cilantro",
+                "quantity": 0.5,
+                "unit": "cup",
+                "note": "loosely packed, plus extra for garnish"
+            },
+            {
+                "_id": {
+                    "$oid": "662ee0d9c77c33566f53315a"
+                },
+                "name": "ground cumin",
+                "quantity": 2,
+                "unit": "teaspoon",
+                "note": ""
+            },
+            {
+                "_id": {
+                    "$oid": "662ee0d9c77c33566f53315b"
+                },
+                "name": "garlic",
+                "quantity": 1,
+                "unit": "clove ",
+                "note": "minced"
+            }
+        ],
+        "instructions": [
+            "Stir all ingredients together in a medium saucepan. Heat over medium-high heat until simmering. Reduce heat to medium-low, cover and simmer for at least 10 minutes, stirring occasionally.",
+            "Serve soup warm topped with additional fresh cilantro as garnish."
+        ],
+        "image_url": "https://www.eatingbirdfood.com/wp-content/uploads/2022/12/black-bean-soup-hero-new-633x950.jpg"
+    }
+]

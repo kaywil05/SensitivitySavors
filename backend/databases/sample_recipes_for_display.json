@@ -24,72 +24,72 @@
         "$oid": "661f7f2c5e60845f94eb252a"
       },
       "name": "thinly sliced cucumbers",
-      "measurement_number": "2",
-      "measurement_unit": "cups",
-      "parenthesis_note": "Japanese, English, or regular"
+      "quantity": "2",
+      "unit": "cups",
+      "note": "Japanese, English, or regular"
     },
     {
       "_id": {
         "$oid": "661f7f2c5e60845f94eb252b"
       },
       "name": "salt",
-      "measurement_number": "1/2 - 1",
-      "measurement_unit": "teaspoon",
-      "parenthesis_note": "to taste"
+      "quantity": "1/2 - 1",
+      "unit": "teaspoon",
+      "note": "to taste"
     },
     {
       "_id": {
         "$oid": "661f7f2c5e60845f94eb252c"
       },
       "name": "pepper",
-      "measurement_number": "1/4",
-      "measurement_unit": "teaspoon",
-      "parenthesis_note": ""
+      "quantity": "1/4",
+      "unit": "teaspoon",
+      "note": ""
     },
     {
       "_id": {
         "$oid": "661f7f2c5e60845f94eb252d"
       },
       "name": "sugar",
-      "measurement_number": "1",
-      "measurement_unit": "tablespoon",
-      "parenthesis_note": "or slightly less honey"
+      "quantity": "1",
+      "unit": "tablespoon",
+      "note": "or slightly less honey"
     },
     {
       "_id": {
         "$oid": "661f7f2c5e60845f94eb252e"
       },
       "name": "soy sauce",
-      "measurement_number": "1",
-      "measurement_unit": "tablespoon",
-      "parenthesis_note": ""
+      "quantity": "1",
+      "unit": "tablespoon",
+      "note": ""
     },
     {
       "_id": {
         "$oid": "661f7f2c5e60845f94eb252f"
       },
       "name": "rice wine vinegar",
-      "measurement_number": "1/4",
-      "measurement_unit": "cup",
-      "parenthesis_note": ""
+      "quantity": "1/4",
+      "unit": "cup",
+      "note": ""
     },
     {
       "_id": {
         "$oid": "661f7f2c5e60845f94eb2530"
       },
       "name": "sesame oil",
-      "measurement_number": "1",
-      "measurement_unit": "teaspoon",
-      "parenthesis_note": ""
+      "quantity": "1",
+      "unit": "teaspoon",
+      "note": ""
     },
     {
       "_id": {
         "$oid": "661f7f2c5e60845f94eb2531"
       },
       "name": "sesame seeds",
-      "measurement_number": "2",
-      "measurement_unit": "teaspoons",
-      "parenthesis_note": ""
+      "quantity": "2",
+      "unit": "teaspoons",
+      "note": ""
     }
   ],
   "instructions": [
@@ -157,54 +157,54 @@
         "$oid": "661f81385e60845f94eb2549"
       },
       "name": "salt",
-      "measurement_number": "",
-      "measurement_unit": "",
-      "parenthesis_note": "to taste"
+      "quantity": "",
+      "unit": "",
+      "note": "to taste"
     },
     {
       "_id": {
         "$oid": "661f81385e60845f94eb254a"
       },
       "name": "spaghetti",
-      "measurement_number": "1/2",
-      "measurement_unit": "pound",
-      "parenthesis_note": ""
+      "quantity": "1/2",
+      "unit": "pound",
+      "note": ""
     },
     {
       "_id": {
         "$oid": "661f81385e60845f94eb254b"
       },
       "name": "olive oil",
-      "measurement_number": "2",
-      "measurement_unit": "tablespoons",
-      "parenthesis_note": ""
+      "quantity": "2",
+      "unit": "tablespoons",
+      "note": ""
     },
     {
       "_id": {
         "$oid": "661f81385e60845f94eb254c"
       },
       "name": "unsalted butter",
-      "measurement_number": "2",
-      "measurement_unit": "tablespoons",
-      "parenthesis_note": ""
+      "quantity": "2",
+      "unit": "tablespoons",
+      "note": ""
     },
     {
       "_id": {
         "$oid": "661f81385e60845f94eb254d"
       },
       "name": "coarsely grounded black pepper",
-      "measurement_number": "2",
-      "measurement_unit": "teaspoons",
-      "parenthesis_note": ""
+      "quantity": "2",
+      "unit": "teaspoons",
+      "note": ""
     },
     {
       "_id": {
         "$oid": "661f81385e60845f94eb254e"
       },
       "name": "grated parmesan cheese, or pecorino romano cheese",
-      "measurement_number": "4",
-      "measurement_unit": "ounces",
-      "parenthesis_note": ""
+      "quantity": "4",
+      "unit": "ounces",
+      "note": ""
     }
   ],
   "instructions": [
@@ -274,45 +274,45 @@
         "$oid": "661f825f5e60845f94eb2558"
       },
       "name": "black beans",
-      "measurement_number": "3 (15 oz)",
-      "measurement_unit": "cans ",
-      "parenthesis_note": "with liquid"
+      "quantity": "3 (15 oz)",
+      "unit": "cans ",
+      "note": "with liquid"
     },
     {
       "_id": {
         "$oid": "661f825f5e60845f94eb2559"
       },
       "name": "good-quality salsa",
-      "measurement_number": "1",
-      "measurement_unit": "lb",
-      "parenthesis_note": "about 2.5 cups"
+      "quantity": "1",
+      "unit": "lb",
+      "note": "about 2.5 cups"
     },
     {
       "_id": {
         "$oid": "661f825f5e60845f94eb255a"
       },
       "name": "chopped fresh cilantro",
-      "measurement_number": "1/2",
-      "measurement_unit": "cup",
-      "parenthesis_note": "loosely packed, plus extra for garnish"
+      "quantity": "1/2",
+      "unit": "cup",
+      "note": "loosely packed, plus extra for garnish"
     },
     {
       "_id": {
         "$oid": "661f825f5e60845f94eb255b"
       },
       "name": "ground cumin",
-      "measurement_number": "2",
-      "measurement_unit": "teaspoon",
-      "parenthesis_note": ""
+      "quantity": "2",
+      "unit": "teaspoon",
+      "note": ""
     },
     {
       "_id": {
         "$oid": "661f825f5e60845f94eb255c"
       },
       "name": "garlic",
-      "measurement_number": "1",
-      "measurement_unit": "clove ",
-      "parenthesis_note": "minced"
+      "quantity": "1",
+      "unit": "clove ",
+      "note": "minced"
     }
   ],
   "instructions": [

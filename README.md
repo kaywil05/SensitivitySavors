@@ -19,3 +19,10 @@ Run the following command
 - Run command
 `npm run dev`
 - Open browser at [http://localhost:3000](http://localhost:3000)
+
+### Inititialize Database
+
+- Open mongodb compass
+- Import collection from json file `backend/databases/diet_categories.json`
+- Import collection from json file `backend/databases/ingredients.json`
+- Import collection from json file `backend/databases/recipes.json`
