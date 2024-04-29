@@ -3,7 +3,7 @@ function submitRecipe(formElement) {
     var recipeData = {
         name: formData.name,
         author: formData.author,
-        image_url: formData.image_url,
+        // image_url: formData.image_url,
         prep_time_min: formData.prep_time_min,
         prep_time_sec: formData.prep_time_sec,
         cook_time_min: formData.cook_time_min,

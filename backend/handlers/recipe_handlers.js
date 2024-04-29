@@ -1,6 +1,8 @@
 const Recipe = require("../models/recipe");
 const DietCategory = require("../models/diet_category");
 const Ingredient = require("../models/ingredient");
+const { Server } = require("socket.io");
+
 
 async function getAllRecipes(req, res) {
     console.log("Find all recipes");
@@ -10,6 +12,8 @@ async function getAllRecipes(req, res) {
 
 async function createNewRecipe(req, res) {
     const recipeInfo = req.body;
+    const image_url = `uploads/${req.file.filename}`;
+    // console.log(`Uploaded file: ${JSON.stringify(req.file)}`);
     var categoryIds = [];
     if (typeof(recipeInfo.categories) == "string") {
         categoryIds.push(recipeInfo.categories);
@@ -42,14 +46,15 @@ async function createNewRecipe(req, res) {
         categories: dietCategories,
         ingredients: ingredients,
         instructions: instructions,
+        image_url: image_url
     });
     console.log(`Added new recipe ${newRecipe.name}`);
-    res.redirect("/");
+    res.redirect("/all_recipes");
 }
 
 async function findRecipeByID(req, res) {
     const recipe = await Recipe.findById(req.params.recipeId);
-    // console.log(recipe)
+    // image_url = `${}/${recipe.image_url}`
     var categories = [];
     for (const catId of recipe.categories) {
         const dietCategory = await DietCategory.findById(catId);

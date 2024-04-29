@@ -25,7 +25,8 @@
             <h1><%= recipe.name %> Recipe </h1>
             <p>By: <%= recipe.author %></p>
             <div class="image-container2">
-                <img src="<%= recipe.image_url %>" alt="<%= recipe.name %>">
+                <!-- <img src="<%= `http://localhost:3000/${recipe.image_url}` %>" alt="<%= recipe.name %>"> -->
+                <img src="<%= `../${recipe.image_url}` %>" alt="<%= recipe.name %>">
             </div>
 
             <div class="time-container">
