@@ -20,9 +20,13 @@ async function recipesPageHandler(req, res) {
     res.render("pages/all_recipes", {recipes: allRecipes});
 }
 
+function qaPageHandler(req, res) {
+    res.render("pages/q_a_chat");
+}
 
 module.exports = {
     homePageHandler,
     formPageHandler,
     recipesPageHandler,
+    qaPageHandler
 }

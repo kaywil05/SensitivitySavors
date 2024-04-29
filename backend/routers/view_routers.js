@@ -8,6 +8,7 @@ router.get("/", viewHandler.homePageHandler);
 router.get("/index", viewHandler.homePageHandler);
 router.get("/form", viewHandler.formPageHandler);
 router.get("/all_recipes", viewHandler.recipesPageHandler);
+router.get("/q_a_chat", viewHandler.qaPageHandler);
 
 // Post request to add new recipes into database
 router.post('/add_recipe', function(req, res){
