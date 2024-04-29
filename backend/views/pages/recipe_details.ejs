@@ -20,18 +20,63 @@
     
     <!-- NEED TO UPDATE THIS TO PROPERLY DISPLAY RECIPE -->
     <body>
-        <div class="container">
+        <div class="container2">
         
-            <h1><%= recipe.name %>: </h1>
-            <p>Author: <%= recipe.author %></p>
+            <h1><%= recipe.name %> Recipe </h1>
+            <p>By: <%= recipe.author %></p>
             <div class="image-container2">
                 <img src="<%= recipe.image_url %>" alt="<%= recipe.name %>">
             </div>
-            <p>Prep Time: <%= recipe.prep_time %></p>
-            <p>Cook Time: <%= recipe.cook_time %></p>
-            <p>Total Time: <%= recipe.total_time %></p>
-            <p>Servings: <%= recipe.servings %></p>
 
+            <div class="time-container">
+                <div class="time-section">
+                    <p>Prep Time: <%= recipe.prep_time %></p>
+                </div>
+
+                <div class="time-section">
+                    <p>Cook Time: <%= recipe.cook_time %></p>
+                </div>
+
+                <div class="time-section">
+                    <p>Total Time: <%= recipe.total_time %></p>
+                </div>
+            </div>
+
+            <div class="category-section">
+                <p>Categories:</p>
+                <ul>
+                    <% recipe.category.forEach(function(category) { %>
+                        <% if (category.dietCategory) { %>
+                            <% category.dietCategory.forEach(function(dietCategory) { %>
+                                <li><%= dietCategory %></li>
+                            <% }); %>
+                        <% } %>
+                    <% }); %>
+                </ul>
+            </div>
+
+            <div class="recipe-details">
+
+                <div class="ingredients-column">
+                    <h3>Ingredients</h3>
+                    for <%= recipe.servings %> servings:
+                    <ul>
+                        <% recipe.ingredients.forEach(function(ingredient) { %>
+                            <li><%= ingredient.quantity %> <%= ingredient.unit %> <%= ingredient.name %> <% if (ingredient.note) { %>(<%= ingredient.note %>)<% } %></li>
+                        <% }); %>
+                    </ul>
+                </div>
+
+                <div class="instructions-column">
+                    <h3>Directions:</h3>
+                    <ol>
+                        <% recipe.instructions.forEach(function(instruction) { %>
+                            <li><%= instruction.step %></li>
+                        <% }); %>
+                    </ol>
+                </div>
+
+            </div>
         </div>
     </body>
 </html>

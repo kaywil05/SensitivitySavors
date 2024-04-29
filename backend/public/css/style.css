@@ -335,3 +335,56 @@ ul {
         max-width: 100%;
     }
 }
+
+/* Individual Recipes Page Formatting */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    /*border-bottom: 1px solid #ccc; /* Add border between time sections */
+}
+
+.time-section {
+    flex: 1; /* Each time section takes up equal space */
+    border-left: 1px solid #ccc; /* Add vertical border between time sections */
+    border-right: 1px solid #ccc; /* Add vertical border between time sections */
+    padding-right: 10px; /* Add some padding to separate text from the border */
+}
+
+.category-section {
+    
+}
+
+.recipe-details {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.ingredients-column {
+    flex: 1; /* Take up equal space */
+    text-align: left;
+}
+
+.instructions-column {
+    flex: 2; /* Take up twice as much space as ingredients */
+    text-align: left;
+}
+
+/* Style for ingredients and instructions */
+.ingredients-column ul,
+.instructions-column ol {
+    margin: 0;
+    padding: 0;
+}
+
+.ingredients-column ul li,
+.instructions-column ol li {
+    
+}
