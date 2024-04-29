@@ -47,7 +47,30 @@ async function createNewRecipe(req, res) {
     res.redirect("/");
 }
 
+async function findRecipeByID(req, res) {
+    const recipe = await Recipe.findById(req.params.recipeId);
+    // console.log(recipe)
+    var categories = [];
+    for (const catId of recipe.categories) {
+        const dietCategory = await DietCategory.findById(catId);
+        categories.push(dietCategory);
+    };
+    var ingredients = [];
+    for (const ingredientId of recipe.ingredients) {
+        const ingredient = await Ingredient.findById(ingredientId);
+        ingredients.push(ingredient);
+    };
+    // console.log(categories);
+    // console.log(ingredients);
+    // TODO: Error handling here
+    res.render(
+        "pages/recipe_details",
+        {recipe: recipe, ingredients: ingredients, categories: categories}
+    );
+}
+
 module.exports = {
     getAllRecipes,
     createNewRecipe,
+    findRecipeByID,
 }

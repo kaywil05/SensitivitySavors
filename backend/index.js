@@ -7,8 +7,8 @@ const dietCategoryRouter = require("./routers/diet_category_routers");
 
 
 // --------------- Database connection ------------------
-// const DB_URI = "mongodb://localhost:27017/test";
-const DB_URI = "mongodb+srv://ntphuong163:Kangaroo163CSDebugger@devcluster.live9az.mongodb.net/test";
+const DB_URI = "mongodb://localhost:27017/test";
+// const DB_URI = "mongodb+srv://ntphuong163:Kangaroo163CSDebugger@devcluster.live9az.mongodb.net/test";
 
 mongoose.connection.on("connected", () => console.log("Database connected."));
 mongoose

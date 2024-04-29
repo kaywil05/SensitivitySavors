@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const viewHandler = require("../handlers/view_handlers");
 var recipes_db = require("../databases/recipes");
+// const Recipe = require("../models/recipe");
 
 router.get("/", viewHandler.homePageHandler);
 router.get("/index", viewHandler.homePageHandler);

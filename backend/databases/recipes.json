@@ -8,33 +8,30 @@
         "categories": [
             {
                 "_id": {
-                    "$oid": "662edd7738fb446e16cf92da"
+                    "$oid": "662f0ee8c77c33566f533178"
                 },
                 "dietCategory": "Vegan",
-                "description": "A vegan diet is made up of plant-based foods, such as fruits, vegetables, beans, grains, nuts, and seeds, and excludes all animal products and by-products. This includes dairy, eggs, honey, meat, poultry, and seafood.",
-                "__v": 0
+                "description": "A vegan diet is made up of plant-based foods, such as fruits, vegetables, beans, grains, nuts, and seeds, and excludes all animal products and by-products. This includes dairy, eggs, honey, meat, poultry, and seafood."
             },
             {
                 "_id": {
-                    "$oid": "662edd8938fb446e16cf92dc"
+                    "$oid": "662f0ee8c77c33566f533179"
                 },
                 "dietCategory": "Vegetarian",
-                "description": "A vegetarian diet consists of foods that mainly come from plants, such as vegetables, fruits, whole grains, legumes, seeds, and nuts. Some vegetarians also include eggs and/or milk if they are lacto-ovo vegetarian.",
-                "__v": 0
+                "description": "A vegetarian diet consists of foods that mainly come from plants, such as vegetables, fruits, whole grains, legumes, seeds, and nuts. Some vegetarians also include eggs and/or milk if they are lacto-ovo vegetarian."
             },
             {
                 "_id": {
-                    "$oid": "662eddad38fb446e16cf92e0"
+                    "$oid": "662f0ee8c77c33566f53317b"
                 },
                 "dietCategory": "Dairy free",
-                "description": "A dairy-free diet can include plant-based milk alternatives, yogurt, tofu, and other dairy-free foods. When choosing dairy-free products, you can look for those that are fortified with calcium, vitamin D, and protein.",
-                "__v": 0
+                "description": "A dairy-free diet can include plant-based milk alternatives, yogurt, tofu, and other dairy-free foods. When choosing dairy-free products, you can look for those that are fortified with calcium, vitamin D, and protein."
             }
         ],
         "ingredients": [
             {
                 "_id": {
-                    "$oid": "662ee0d9c77c33566f533149"
+                    "$oid": "662f0fa8c77c33566f533180"
                 },
                 "name": "thinly sliced cucumbers",
                 "quantity": 2,
@@ -43,7 +40,7 @@
             },
             {
                 "_id": {
-                    "$oid": "662ede92c77c33566f533135"
+                    "$oid": "662f0fa8c77c33566f533181"
                 },
                 "name": "salt",
                 "quantity": 1,
@@ -52,7 +49,7 @@
             },
             {
                 "_id": {
-                    "$oid": "662ede92c77c33566f533136"
+                    "$oid": "662f0fa8c77c33566f533182"
                 },
                 "name": "pepper",
                 "quantity": 0.25,
@@ -61,7 +58,7 @@
             },
             {
                 "_id": {
-                    "$oid": "662ede92c77c33566f533137"
+                    "$oid": "662f0fa8c77c33566f533183"
                 },
                 "name": "sugar",
                 "quantity": 1,
@@ -70,7 +67,7 @@
             },
             {
                 "_id": {
-                    "$oid": "662ede92c77c33566f533138"
+                    "$oid": "662f0fa8c77c33566f533184"
                 },
                 "name": "soy sauce",
                 "quantity": 1,
@@ -79,16 +76,16 @@
             },
             {
                 "_id": {
-                    "$oid": "662ede92c77c33566f533139"
+                    "$oid": "662f0fa8c77c33566f533185"
                 },
                 "name": "rice wine vinegar",
-                "quantity": 1,
+                "quantity": 0.25,
                 "unit": "cup",
                 "note": ""
             },
             {
                 "_id": {
-                    "$oid": "662ede92c77c33566f53313a"
+                    "$oid": "662f0fa8c77c33566f533186"
                 },
                 "name": "sesame oil",
                 "quantity": 1,
@@ -97,10 +94,10 @@
             },
             {
                 "_id": {
-                    "$oid": "662ede92c77c33566f53313b"
+                    "$oid": "662f0fa8c77c33566f533187"
                 },
                 "name": "sesame seeds",
-                "quantity": 1,
+                "quantity": 2,
                 "unit": "teaspoons",
                 "note": ""
             }
@@ -124,17 +121,16 @@
         "categories": [
             {
                 "_id": {
-                    "$oid": "662edd8938fb446e16cf92dc"
+                    "$oid": "662f0ee8c77c33566f533179"
                 },
                 "dietCategory": "Vegetarian",
-                "description": "A vegetarian diet consists of foods that mainly come from plants, such as vegetables, fruits, whole grains, legumes, seeds, and nuts. Some vegetarians also include eggs and/or milk if they are lacto-ovo vegetarian.",
-                "__v": 0
+                "description": "A vegetarian diet consists of foods that mainly come from plants, such as vegetables, fruits, whole grains, legumes, seeds, and nuts. Some vegetarians also include eggs and/or milk if they are lacto-ovo vegetarian."
             }
         ],
         "ingredients": [
             {
                 "_id": {
-                    "$oid": "662ee0d9c77c33566f533151"
+                    "$oid": "662f0fa8c77c33566f533188"
                 },
                 "name": "salt",
                 "quantity": 1,
@@ -143,7 +139,7 @@
             },
             {
                 "_id": {
-                    "$oid": "662ee0d9c77c33566f533152"
+                    "$oid": "662f0fa8c77c33566f533189"
                 },
                 "name": "spaghetti",
                 "quantity": 0.5,
@@ -152,7 +148,7 @@
             },
             {
                 "_id": {
-                    "$oid": "662ee0d9c77c33566f533153"
+                    "$oid": "662f0fa8c77c33566f53318a"
                 },
                 "name": "olive oil",
                 "quantity": 2,
@@ -161,7 +157,7 @@
             },
             {
                 "_id": {
-                    "$oid": "662ee0d9c77c33566f533154"
+                    "$oid": "662f0fa8c77c33566f53318b"
                 },
                 "name": "unsalted butter",
                 "quantity": 2,
@@ -170,7 +166,7 @@
             },
             {
                 "_id": {
-                    "$oid": "662ee0d9c77c33566f533155"
+                    "$oid": "662f0fa8c77c33566f53318c"
                 },
                 "name": "coarsely grounded black pepper",
                 "quantity": 2,
@@ -179,7 +175,7 @@
             },
             {
                 "_id": {
-                    "$oid": "662ee0d9c77c33566f533156"
+                    "$oid": "662f0fa8c77c33566f53318d"
                 },
                 "name": "grated parmesan cheese, or pecorino romano cheese",
                 "quantity": 4,
@@ -206,41 +202,37 @@
         "categories": [
             {
                 "_id": {
-                    "$oid": "662edd8938fb446e16cf92dc"
+                    "$oid": "662f0ee8c77c33566f533179"
                 },
                 "dietCategory": "Vegetarian",
-                "description": "A vegetarian diet consists of foods that mainly come from plants, such as vegetables, fruits, whole grains, legumes, seeds, and nuts. Some vegetarians also include eggs and/or milk if they are lacto-ovo vegetarian.",
-                "__v": 0
+                "description": "A vegetarian diet consists of foods that mainly come from plants, such as vegetables, fruits, whole grains, legumes, seeds, and nuts. Some vegetarians also include eggs and/or milk if they are lacto-ovo vegetarian."
             },
             {
                 "_id": {
-                    "$oid": "662edd7738fb446e16cf92da"
+                    "$oid": "662f0ee8c77c33566f533178"
                 },
                 "dietCategory": "Vegan",
-                "description": "A vegan diet is made up of plant-based foods, such as fruits, vegetables, beans, grains, nuts, and seeds, and excludes all animal products and by-products. This includes dairy, eggs, honey, meat, poultry, and seafood.",
-                "__v": 0
+                "description": "A vegan diet is made up of plant-based foods, such as fruits, vegetables, beans, grains, nuts, and seeds, and excludes all animal products and by-products. This includes dairy, eggs, honey, meat, poultry, and seafood."
             },
             {
                 "_id": {
-                    "$oid": "662edda038fb446e16cf92de"
+                    "$oid": "662f0ee8c77c33566f53317a"
                 },
                 "dietCategory": "Gluten free",
-                "description": "A gluten-free diet excludes foods that contain gluten, a protein found in wheat and other grains.",
-                "__v": 0
+                "description": "A gluten-free diet excludes foods that contain gluten, a protein found in wheat and other grains."
             },
             {
                 "_id": {
-                    "$oid": "662eddad38fb446e16cf92e0"
+                    "$oid": "662f0ee8c77c33566f53317b"
                 },
                 "dietCategory": "Dairy free",
-                "description": "A dairy-free diet can include plant-based milk alternatives, yogurt, tofu, and other dairy-free foods. When choosing dairy-free products, you can look for those that are fortified with calcium, vitamin D, and protein.",
-                "__v": 0
+                "description": "A dairy-free diet can include plant-based milk alternatives, yogurt, tofu, and other dairy-free foods. When choosing dairy-free products, you can look for those that are fortified with calcium, vitamin D, and protein."
             }
         ],
         "ingredients": [
             {
                 "_id": {
-                    "$oid": "662ee0d9c77c33566f533157"
+                    "$oid": "662f0fa8c77c33566f53318e"
                 },
                 "name": "black beans",
                 "quantity": 3,
@@ -249,7 +241,7 @@
             },
             {
                 "_id": {
-                    "$oid": "662ee0d9c77c33566f533158"
+                    "$oid": "662f0fa8c77c33566f53318f"
                 },
                 "name": "good-quality salsa",
                 "quantity": 1,
@@ -258,7 +250,7 @@
             },
             {
                 "_id": {
-                    "$oid": "662ee0d9c77c33566f533159"
+                    "$oid": "662f0fa8c77c33566f533190"
                 },
                 "name": "chopped fresh cilantro",
                 "quantity": 0.5,
@@ -267,7 +259,7 @@
             },
             {
                 "_id": {
-                    "$oid": "662ee0d9c77c33566f53315a"
+                    "$oid": "662f0fa8c77c33566f533191"
                 },
                 "name": "ground cumin",
                 "quantity": 2,
@@ -276,7 +268,7 @@
             },
             {
                 "_id": {
-                    "$oid": "662ee0d9c77c33566f53315b"
+                    "$oid": "662f0fa8c77c33566f533192"
                 },
                 "name": "garlic",
                 "quantity": 1,

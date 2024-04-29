@@ -28,7 +28,8 @@
         
         <div class="recipes-grid">
             <% recipes.forEach(recipe => { %>
-                <a href="recipe_details/<%= recipe._id %>" class="recipe-link">
+                <!-- <a href="recipe_details/<%= recipe._id %>" class="recipe-link"> -->
+                <a href="recipe/<%= recipe._id %>" class="recipe-link">
                     <div class="recipe-item">
                         <div class="image-container">
                             <img src="<%= recipe.image_url %>" alt="<%= recipe.name %>">

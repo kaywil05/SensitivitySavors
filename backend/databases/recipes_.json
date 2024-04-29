@@ -1,0 +1,193 @@
+[
+    {
+        "name": "Japanese Cucumber Salad",
+        "author": "Sharon123 (food.com",
+        "prep_time": 1800,
+        "cook_time": 0,
+        "total_time": 1800,
+        "categories": [
+            {
+                "$ref": "dietcategories",
+                "$db": "test",
+                "$oid": "662fdab8237246305fcdc515"
+            },
+            {
+                "$ref": "dietcategories",
+                "$db": "test",
+                "$oid": "662fdab8237246305fcdc516"
+            },
+            {
+                "$ref": "dietcategories",
+                "$db": "test",
+                "$oid": "662fdab8237246305fcdc518"
+            }
+        ],
+        "ingredients": [
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc51a"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc51b"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc51c"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc51d"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc51e"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc51f"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc520"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc521"
+            }
+        ],
+        "instructions": [
+            "If using English or regular cucumbers, they need to be peeled, cut lengthwise, seeded and sliced into thin half moons.",
+            "In a large bowl, combine cucumbers, salt and pepper, mix well.",
+            "Add sugar(or honey, soy sauce, rice wine vinegar and sesame oil and mix well.",
+            "Sprinkle with sesame seeds and mix.",
+            "Let marinate for 20 minutes before serving.",
+            "Adjust seasonings before serving."
+        ],
+        "image_url": "https://cdn.loveandlemons.com/wp-content/uploads/2023/05/cucumber-salad.jpg"
+    },
+    {
+        "name": "Cacio e Pepe (Spaghetti with Cheese and Pepper)",
+        "author": "Kiano Moju (tasty.co)",
+        "prep_time": 600,
+        "cook_time": 1200,
+        "total_time": 1800,
+        "categories": [
+            {
+                "$ref": "dietcategories",
+                "$db": "test",
+                "$oid": "662fdab8237246305fcdc516"
+            }
+        ],
+        "ingredients": [
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc522"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc523"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc524"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc525"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc526"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc527"
+            }
+        ],
+        "instructions": [
+            "Bring a large pot of salted water to a boil. Cook the pasta for 1 minute less than the package instructs, until al dente. Save 1 cup (240 ml) pasta water, then drain.",
+            "Heat a large sauté pan over medium heat. Add the olive oil, butter, and pepper, and stir to combine.",
+            "Stir in the reserved pasta water.",
+            "Toss in the cooked pasta. Reduce the heat to low.",
+            "Add the Parmesan and toss until the cheese is melted and the pasta is well-coated.",
+            "Season with salt, if desired."
+        ],
+        "image_url": "https://www.seriouseats.com/thmb/px_e8tCpfU7pcNvn4-j3bzQ9kGI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/spaghetti-cacio-e-pepe-recipe-hero-02_1-70880518badb4d428f5d5b03d303fabc.JPG"
+    },
+    {
+        "name": "5 Ingredient Black Bean Soup",
+        "author": "Gimme Some Oven",
+        "prep_time": 120,
+        "cook_time": 1080,
+        "total_time": 1200,
+        "categories": [
+            {
+                "$ref": "dietcategories",
+                "$db": "test",
+                "$oid": "662fdab8237246305fcdc515"
+            },
+            {
+                "$ref": "dietcategories",
+                "$db": "test",
+                "$oid": "662fdab8237246305fcdc516"
+            },
+            {
+                "$ref": "dietcategories",
+                "$db": "test",
+                "$oid": "662fdab8237246305fcdc517"
+            },
+            {
+                "$ref": "dietcategories",
+                "$db": "test",
+                "$oid": "662fdab8237246305fcdc518"
+            }
+        ],
+        "ingredients": [
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc528"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc529"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc52a"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc52b"
+            },
+            {
+                "$ref": "ingredients",
+                "$db": "test",
+                "$oid": "662fdac2237246305fcdc52c"
+            }
+        ],
+        "instructions": [
+            "Stir all ingredients together in a medium saucepan. Heat over medium-high heat until simmering. Reduce heat to medium-low, cover and simmer for at least 10 minutes, stirring occasionally.",
+            "Serve soup warm topped with additional fresh cilantro as garnish."
+        ],
+        "image_url": "https://www.eatingbirdfood.com/wp-content/uploads/2022/12/black-bean-soup-hero-new-633x950.jpg"
+    }
+]
