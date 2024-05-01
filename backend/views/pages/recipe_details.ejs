@@ -27,7 +27,7 @@
             <h1><%= recipe.name %> Recipe </h1>
 
             <!-- Diet Categories -->
-            <div class="category-section">
+            <!-- <div class="category-section">
                 <ul>
                     <% categories.forEach(function(category) { %>
                         <% if (category) { %>
@@ -35,8 +35,18 @@
                         <% } %>
                     <% }); %>
                 </ul>
+            </div> -->
+            <div class="category-section">
+                <% categories.forEach(function(category) { %>
+                    <% if (category) { %>
+                        <div class="diet-category">
+                            <div class="circle <%= category.dietCategory.toLowerCase().replace(' ', '-') %>"><%= category.dietCategory.slice(0, 2).toUpperCase() %></div>
+                            <div class="category-description"><%= category.dietCategory %></div>
+                        </div>
+                    <% } %>
+                <% }); %>
             </div>
-
+            
             <!-- Image -->
             <div class="image-container2">
                 <img src="<%= `../${recipe.image_url}` %>" alt="<%= recipe.name %>">
