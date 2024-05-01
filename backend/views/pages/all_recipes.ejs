@@ -22,10 +22,22 @@
     
     <!-- NEED TO UPDATE THIS TO PROPERLY DISPLAY ALL RECIPES -->
     <body>
-        <div class="filter-button">
+        <!-- <div class="filter-button">
             <a href="#" class="filter-link">Filter <i class="material-icons">filter_list</i></a>
-        </div>
+        </div> -->
         <h1>All Recipes: </h1>
+            <form id="filter-form" action="/all_recipes" method="GET">
+                <div class="filter-options">
+                    <h3>Dietary Options</h3>
+                    <label><input type="checkbox" name="dietary" value="vegan"> Vegan</label>
+                    <label><input type="checkbox" name="dietary" value="vegetarian"> Vegetarian</label>
+                    <label><input type="checkbox" name="dietary" value="gluten-free"> Gluten Free</label>
+                    <label><input type="checkbox" name="dietary" value="dairy-free"> Dairy Free</label>
+                    
+                    <button class="apply-button" onclick="submitFilters()"> <span>Apply</span>  <i class="material-icons" style="font-size: 25px; vertical-align: middle;">filter_list</i></button>
+                
+                </div>
+            </form>
         
         <div class="recipes-grid">
             <% recipes.forEach(recipe => { %>
@@ -40,5 +52,16 @@
                 </a>
             <%}) %>
         </div>
+
+        <script>
+            // document.querySelector('.filter-link').addEventListener('click', function() {
+            //     document.querySelector('.filter-options');
+            // });
+
+            function submitFilters() {
+                document.getElementById("filter-form").submit();
+                printf("Applied filter");
+            }
+        </script>
     </body>
 </html>

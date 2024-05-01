@@ -65,9 +65,11 @@ body {
 /* ALL RECIPES DISPLAY PAGE */
 /* Define grid layout */
 .recipes-grid {
+    margin-right: 20%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; /* Gap between grid items */
+    height: 100vh;
 }
 
 .recipe-item {
@@ -127,6 +129,36 @@ body {
     text-decoration: none;
     line-height: 30px;
     height: 30px;
+}
+
+.filter-options {
+    width: 15%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    position: fixed;
+    top: 28%;
+    right: 0;
+    bottom: 0;
+    /* float: right; */
+}
+
+.apply-button {
+    display: inline-block;
+    padding: 0px 20px;
+    border-radius: 20px; /* Adjust for rounding */
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    line-height: 30px;
+    height: 30px;
+    margin-bottom: 20px; /* Add margin between filter button and filter options */
+    margin-right: 10px; /* Adjust margin to match filter link */
+    vertical-align: middle; /* Align vertically */
+}
+
+.filter-options label {
+    display: block;
+    margin-bottom: 5px;
 }
 
 /**             FORM PAGE                **/
