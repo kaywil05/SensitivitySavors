@@ -54,6 +54,12 @@ async function createNewRecipe(req, res) {
 
 async function findRecipeByID(req, res) {
     const recipe = await Recipe.findById(req.params.recipeId);
+
+    // Convert time fields from seconds into minutes for client
+    recipe.prep_time = convertSecondsToMinutes(recipe.prep_time);
+    recipe.cook_time = convertSecondsToMinutes(recipe.cook_time);
+    recipe.total_time = convertSecondsToMinutes(recipe.total_time);
+
     // image_url = `${}/${recipe.image_url}`
     var categories = [];
     for (const catId of recipe.categories) {
@@ -72,6 +78,11 @@ async function findRecipeByID(req, res) {
         "pages/recipe_details",
         {recipe: recipe, ingredients: ingredients, categories: categories}
     );
+}
+
+// Function to convert seconds to minutes
+function convertSecondsToMinutes(seconds) {
+    return Math.floor(seconds / 60);
 }
 
 module.exports = {

@@ -28,8 +28,6 @@ async function recipesPageHandler(req, res) {
     if(dietary) {
         query = {dietCategory: {$in:Array.isArray(dietary) ? dietary : [dietary] }};
     }
-    console.log(dietary);
-    //console.log(dietCategory);
 
     try{
         //fetch filtered recipies from the database
