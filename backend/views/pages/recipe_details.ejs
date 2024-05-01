@@ -24,25 +24,6 @@
         <div class="container2">
         
             <h1><%= recipe.name %> Recipe </h1>
-            <p>By: <%= recipe.author %></p>
-            <div class="image-container2">
-                <!-- <img src="<%= `http://localhost:3000/${recipe.image_url}` %>" alt="<%= recipe.name %>"> -->
-                <img src="<%= `../${recipe.image_url}` %>" alt="<%= recipe.name %>">
-            </div>
-
-            <div class="time-container">
-                <div class="time-section">
-                    <p>Prep Time: <%= recipe.prep_time %></p>
-                </div>
-
-                <div class="time-section">
-                    <p>Cook Time: <%= recipe.cook_time %></p>
-                </div>
-
-                <div class="time-section">
-                    <p>Total Time: <%= recipe.total_time %></p>
-                </div>
-            </div>
 
             <div class="category-section">
                 <p>Categories:</p>
@@ -53,6 +34,27 @@
                         <% } %>
                     <% }); %>
                 </ul>
+            </div>
+
+            <div class="image-container2">
+                <!-- <img src="<%= `http://localhost:3000/${recipe.image_url}` %>" alt="<%= recipe.name %>"> -->
+                <img src="<%= `../${recipe.image_url}` %>" alt="<%= recipe.name %>">
+            </div>
+
+            <p>By: <%= recipe.author %></p>
+
+            <div class="time-container">
+                <div class="time-section">
+                    <p>Prep Time: <%= recipe.prep_time %> minutes</p>
+                </div>
+
+                <div class="time-section">
+                    <p>Cook Time: <%= recipe.cook_time %> minutes</p>
+                </div>
+
+                <div class="time-section">
+                    <p>Total Time: <%= recipe.total_time %> minutes</p>
+                </div>
             </div>
 
             <div class="recipe-details">
