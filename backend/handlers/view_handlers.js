@@ -17,22 +17,8 @@ async function formPageHandler(req, res) {
 
 
 async function recipesPageHandler(req, res) {
-    const allRecipes = await recipeHandlers.getAllRecipes();
-    //res.render("pages/all_recipes", {recipes: allRecipes});
-
-    //Extract filter from query parameters
-    //const { dietary } = req.query;
-
     try {
-        let query = {};
-        const { dietary } = req.query;
-
-        if (dietary && dietary.length > 0) {
-            query = { 'categories.dietCategory': { $in: dietary } };
-        }
-
-        const recipes = await Recipe.find(query);
-        
+        const recipes = await recipeHandlers.getAllRecipes(req, res);
         res.render('pages/all_recipes', { recipes });
     } catch (error) {
         console.error(error);

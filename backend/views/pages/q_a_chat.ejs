@@ -26,7 +26,16 @@
             <a href="#" class="filter-link">Filter <i class="material-icons">filter_list</i></a>
         </div>
         <h1>Q&A Chat</h1>
-        
-        
+        <div>
+            <form id="chatbox" action="http://127.0.0.1:8000/query" method="POST" onsubmit="askChatBot(e)">
+                <label for="question">Enter your question:</label>
+                <input type="text" name="question" id="question">
+                <button id="ask" type="submit">Ask</button>
+            </form>
+        </div>
+        <div>
+            <p id="answer"></p>
+        </div>
+        <script src="js/scripts.js"></script>
     </body>
 </html>

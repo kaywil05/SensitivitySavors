@@ -5,8 +5,15 @@ const { Server } = require("socket.io");
 
 
 async function getAllRecipes(req, res) {
-    console.log("Find all recipes");
-    var recipes = await Recipe.find();
+    // console.log("Find all recipes");
+    let query = {};
+    const { dietary } = req.query;
+
+    if (dietary && dietary.length > 0) {
+        query = { 'categories.dietCategory': { $in: dietary } };
+    }
+    var recipes = await Recipe.find(query).populate(["categories", "ingredients"]).exec();
+    // console.log(recipes[0].categories[0].dietCategory);
     return recipes;
 }
 
