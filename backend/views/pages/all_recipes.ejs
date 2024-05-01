@@ -29,10 +29,10 @@
             <form id="filter-form" action="/all_recipes" method="GET">
                 <div class="filter-options">
                     <h3>Dietary Options</h3>
-                    <label><input type="checkbox" name="dietary" value="vegan"> Vegan</label>
-                    <label><input type="checkbox" name="dietary" value="vegetarian"> Vegetarian</label>
-                    <label><input type="checkbox" name="dietary" value="gluten-free"> Gluten Free</label>
-                    <label><input type="checkbox" name="dietary" value="dairy-free"> Dairy Free</label>
+                    <label><input type="checkbox" name="dietary[]" value="vegan"> Vegan</label>
+                    <label><input type="checkbox" name="dietary[]" value="vegetarian"> Vegetarian</label>
+                    <label><input type="checkbox" name="dietary[]" value="gluten-free"> Gluten Free</label>
+                    <label><input type="checkbox" name="dietary[]" value="dairy-free"> Dairy Free</label>
                     
                     <button class="apply-button" onclick="submitFilters()"> <span>Apply</span>  <i class="material-icons" style="font-size: 25px; vertical-align: middle;">filter_list</i></button>
                 
@@ -54,9 +54,9 @@
         </div>
 
         <script>
-            // document.querySelector('.filter-link').addEventListener('click', function() {
-            //     document.querySelector('.filter-options');
-            // });
+            document.querySelector('.filter-link').addEventListener('click', function() {
+                document.querySelector('.filter-options');
+            });
 
             function submitFilters() {
                 document.getElementById("filter-form").submit();

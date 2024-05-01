@@ -413,10 +413,5 @@ ul {
 .ingredients-column ul,
 .instructions-column ol {
     margin: 0;
-    padding: 0;
-}
-
-.ingredients-column ul li,
-.instructions-column ol li {
-    
+    padding: 20px;
 }

@@ -43,30 +43,4 @@ router.get('/recipe_details/:recipeId', function(req, res) {
     });
 });
 
-//GET request to display all recipes with filters applied
-// router.get('/all_recipes', function(req, res) {
-//     //Extract filter from query parameters
-//     const { dietary } = req.query;
-
-//     //Build query based on filters
-//     let query = {};
-//     if(dietary) {
-//         query = {dietary: {$in:Array.isArray(dietary) ? dietary : [dietary] }};
-//     }
-
-//     try{
-//         //fetch filtered recipies from the database
-//         const allRecipes = dietary ? Recipe.find(query) : Recipe.find();
-
-//         //Render the pages with filtered recipes
-//         res.render('pages/all_recipes', {recipes: allRecipes});
-
-//     }
-//     catch (err){
-//         //handle errors
-//         console.error(err);
-//         res.status(500).send('Internal Server Error');
-//     }
-// });
-
 module.exports = router;

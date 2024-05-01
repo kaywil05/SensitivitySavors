@@ -23,26 +23,29 @@
     <body>
         <div class="container2">
         
+            <!-- Recipe Name -->
             <h1><%= recipe.name %> Recipe </h1>
 
+            <!-- Diet Categories -->
             <div class="category-section">
-                <p>Categories:</p>
                 <ul>
                     <% categories.forEach(function(category) { %>
                         <% if (category) { %>
-                            <li><%= category.dietCategory %></li>
+                            <%= category.dietCategory %><br>
                         <% } %>
                     <% }); %>
                 </ul>
             </div>
 
+            <!-- Image -->
             <div class="image-container2">
-                <!-- <img src="<%= `http://localhost:3000/${recipe.image_url}` %>" alt="<%= recipe.name %>"> -->
                 <img src="<%= `../${recipe.image_url}` %>" alt="<%= recipe.name %>">
             </div>
 
+            <!-- Author -->
             <p>By: <%= recipe.author %></p>
 
+            <!-- Display for Time (Prep, Cook, and Total) -->
             <div class="time-container">
                 <div class="time-section">
                     <p>Prep Time: <%= recipe.prep_time %> minutes</p>
@@ -59,9 +62,9 @@
 
             <div class="recipe-details">
 
+                <!-- Ingredients -->
                 <div class="ingredients-column">
                     <h3>Ingredients</h3>
-                    for 1 servings:
                     <ul>
                         <% ingredients.forEach(function(ingredient) { %>
                             <li><%= ingredient.quantity %> <%= ingredient.unit %> <%= ingredient.name %> <% if (ingredient.note) { %>(<%= ingredient.note %>)<% } %></li>
@@ -69,6 +72,7 @@
                     </ul>
                 </div>
 
+                <!-- Directions -->
                 <div class="instructions-column">
                     <h3>Directions:</h3>
                     <ol>

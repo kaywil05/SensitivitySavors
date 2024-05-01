@@ -21,25 +21,21 @@ async function recipesPageHandler(req, res) {
     //res.render("pages/all_recipes", {recipes: allRecipes});
 
     //Extract filter from query parameters
-    const { dietary } = req.query;
+    //const { dietary } = req.query;
 
-    //Build query based on filters
-    let query = {};
-    if(dietary) {
-        query = {dietCategory: {$in:Array.isArray(dietary) ? dietary : [dietary] }};
-    }
+    try {
+        let query = {};
+        const { dietary } = req.query;
 
-    try{
-        //fetch filtered recipies from the database
-        const recipes = dietary ? await Recipe.find(query) : await Recipe.find();
+        if (dietary && dietary.length > 0) {
+            query = { 'categories.dietCategory': { $in: dietary } };
+        }
 
-        //Render the pages with filtered recipes
-        res.render('pages/all_recipes', {recipes: recipes});
-
-    }
-    catch (err){
-        //handle errors
-        console.error(err);
+        const recipes = await Recipe.find(query);
+        
+        res.render('pages/all_recipes', { recipes });
+    } catch (error) {
+        console.error(error);
         res.status(500).send('Internal Server Error');
     }
 }
