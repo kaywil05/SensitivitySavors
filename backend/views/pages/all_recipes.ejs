@@ -48,11 +48,22 @@
                             <img src="<%= recipe.image_url %>" alt="<%= recipe.name %>">
                         </div>
                         <p><%= recipe.name %></p>
-                        <ul class="diet-categories">
+                        <!-- <ul class="diet-categories">
                             <% recipe.categories.forEach(category => { %>
                                 <li><%= category.dietCategory %></li>
                             <% }) %>
-                        </ul>
+                        </ul> -->
+                        <!-- Diet Categories -->
+                        <div class="category-section">
+                            <% recipe.categories.forEach(function(category) { %>
+                                <% if (category) { %>
+                                    <div class="diet-category">
+                                        <div class="circle <%= category.dietCategory.toLowerCase().replace(' ', '-') %>"><%= category.dietCategory.slice(0, 2).toUpperCase() %></div>
+                                        <div class="category-description"><%= category.dietCategory %></div>
+                                    </div>
+                                <% } %>
+                            <% }); %>
+                        </div>
                     </div>
                 </a>
             <%}) %>
