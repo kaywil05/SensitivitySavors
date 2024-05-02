@@ -258,6 +258,25 @@ h2 {
 p {
     line-height: 1.6;
 }
+
+/* Cute Robot Image Styling */
+.cute-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cute-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adding a subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Adding a smooth hover effect */
+}
+
+.cute-image img:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
+
 .feature-list {
     text-align: left;
     margin-top: 30px;
@@ -287,7 +306,7 @@ ul {
 /* Individual Team Member Styling */
 .team-member {
     flex: 0 0 calc(25% - 40px);
-    max-width: calc(25% - 40px);
+    max-width: calc(25% - 2px);
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
