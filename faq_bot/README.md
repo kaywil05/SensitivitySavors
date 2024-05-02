@@ -14,6 +14,8 @@ pip install transformers sentence-transformers
 pip install uvicorn[standard] fastapi pydantic
 ```
 
+everytime open a new terminal to run, just use command `conda activate torchenv` to activate the enviroment, and then you run the server.
+
 ## How to run server
 
 - Jump into directory `faq_bot/src/server`.
