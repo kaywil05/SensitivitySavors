@@ -1,4 +1,5 @@
 const recipeHandlers = require("./recipe_handlers");
+const dietCategoryHandlers = require("./diet_category_handlers")
 const DietCategory = require("../models/diet_category");
 const Recipe = require('../models/recipe');
 
@@ -18,8 +19,16 @@ async function formPageHandler(req, res) {
 
 async function recipesPageHandler(req, res) {
     try {
-        const recipes = await recipeHandlers.getAllRecipes(req, res);
-        res.render('pages/all_recipes', { recipes });
+        const [recipes, checked_categories] = await recipeHandlers.getAllRecipes(req, res);
+        const categories = await dietCategoryHandlers.getAllDietCategories(req, res);
+        res.render(
+            'pages/all_recipes',
+            { 
+                recipes: recipes, 
+                categories: categories,
+                checked_categories: checked_categories
+            }
+        );
     } catch (error) {
         console.error(error);
         res.status(500).send('Internal Server Error');

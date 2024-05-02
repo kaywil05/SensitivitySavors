@@ -27,21 +27,24 @@
         </div> -->
         <h1>All Recipes: </h1>
             <form id="filter-form" action="/all_recipes" method="GET">
+            <!-- <form id="filter-form" onsubmit="filterRecipes(this)"> -->
                 <div class="filter-options">
                     <h3>Dietary Options</h3>
-                    <label><input type="checkbox" name="dietary[]" value="vegan"> Vegan</label>
-                    <label><input type="checkbox" name="dietary[]" value="vegetarian"> Vegetarian</label>
-                    <label><input type="checkbox" name="dietary[]" value="gluten-free"> Gluten Free</label>
-                    <label><input type="checkbox" name="dietary[]" value="dairy-free"> Dairy Free</label>
-                    
-                    <button class="apply-button" onclick="submitFilters()"> <span>Apply</span>  <i class="material-icons" style="font-size: 25px; vertical-align: middle;">filter_list</i></button>
+                    <% categories.forEach((category) => { %>
+                        <% if (checked_categories.includes(category._id.toString())) { %>
+                            <label><input type="checkbox" checked class="dietCatCheckbox" name="<%= category.dietCategory %>" value="<%= category._id %>"><%= category.dietCategory %></label>
+                        <% } else { %>
+                            <label><input type="checkbox" class="dietCatCheckbox" name="<%= category.dietCategory %>" value="<%= category._id %>"><%= category.dietCategory %></label>
+                        <% } %>
+                    <% }) %>
+                    <!-- <button class="apply-button" onclick="submitFilters()"> <span>Apply</span>  <i class="material-icons" style="font-size: 25px; vertical-align: middle;">filter_list</i></button> -->
+                    <button class="apply-button"> <span>Apply</span>  <i class="material-icons" style="font-size: 25px; vertical-align: middle;">filter_list</i></button>
                 
                 </div>
             </form>
         
         <div class="recipes-grid">
             <% recipes.forEach(recipe => { %>
-                <!-- <a href="recipe_details/<%= recipe._id %>" class="recipe-link"> -->
                 <a href="recipe/<%= recipe._id %>" class="recipe-link">
                     <div class="recipe-item">
                         <div class="image-container">
@@ -69,15 +72,15 @@
             <%}) %>
         </div>
 
-        <script>
+        <!-- <script>
             document.querySelector('.filter-link').addEventListener('click', function() {
                 document.querySelector('.filter-options');
             });
 
             function submitFilters() {
                 document.getElementById("filter-form").submit();
-                printf("Applied filter");
+                console.log("Applied filter");
             }
-        </script>
+        </script> -->
     </body>
 </html>

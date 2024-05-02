@@ -1,3 +1,4 @@
+var ObjectId = require("mongoose").Types.ObjectId;
 const Recipe = require("../models/recipe");
 const DietCategory = require("../models/diet_category");
 const Ingredient = require("../models/ingredient");
@@ -5,17 +6,23 @@ const { Server } = require("socket.io");
 
 
 async function getAllRecipes(req, res) {
-    // console.log("Find all recipes");
-    let query = {};
-    const { dietary } = req.query;
-    console.log(dietary);
+    // console.log(req.query);
+    const dietaries = Object.values(req.query);
+    const dietary_ids = dietaries.map((id_) => ObjectId(id_));
+    // console.log(dietary_ids);
 
-    if (dietary && dietary.length > 0) {
-        query = { 'categories.dietCategory': { $in: dietary } };
+    // if (dietary && dietary.length > 0) {
+    const query = { 'categories': { $all: dietary_ids } };
+    // }
+    var recipes;
+    if (dietary_ids.length == 0){
+        recipes = await Recipe.find().populate(["categories", "ingredients"]).exec();
     }
-    var recipes = await Recipe.find(query).populate(["categories", "ingredients"]).exec();
-    // console.log(recipes[0].categories[0].dietCategory);
-    return recipes;
+    else {
+        recipes = await Recipe.find(query).populate(["categories", "ingredients"]).exec();
+    }
+    // console.log(recipes);
+    return [recipes, dietaries];
 }
 
 async function createNewRecipe(req, res) {

@@ -30,6 +30,13 @@ function submitRecipe(formElement) {
     xhr.send(recipeData);
 }
 
+function filterRecipes(formElement) {
+    const cateCheckboxes = document.querySelectorAll(".dietCatCheckbox:checked");
+    console.log(cateCheckboxes);
+    const checkedCategories = cateCheckboxes.map((el) => el.value);
+    console.log(checkedCategories);
+}
+
 function getDietCategories() {
     const catEle = document.getElementById("categories");
     var selectedValues = [];

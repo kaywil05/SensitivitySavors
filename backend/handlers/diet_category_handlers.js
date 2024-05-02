@@ -2,7 +2,7 @@ const DietCategory = require("../models/diet_category");
 
 async function getAllDietCategories(req, res) {
     const dietCategories = await DietCategory.find();
-    res.json(dietCategories);
+    return dietCategories;
 }
 
 async function addNewDietCategory(req, res) {
