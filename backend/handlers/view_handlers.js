@@ -24,6 +24,8 @@ async function recipesPageHandler(req, res) {
         console.error(error);
         res.status(500).send('Internal Server Error');
     }
+
+    // new stuff
     // const recipes = await recipeHandlers.getAllRecipes(req, res);
 
     // //extract filter from query parameters
@@ -37,8 +39,8 @@ async function recipesPageHandler(req, res) {
 
 
     // try {
-    //     const recipes = dietary ? await Recipe.find(query) : await Recipe.find();
-    //     res.render('pages/all_recipes', { recipes : recipes});
+    //     const recipes = dietary ? await Recipe.find(query) : await recipeHandlers.getAllRecipes(req, res);
+    //     res.render('pages/all_recipes', { recipes : recipes });
     // } catch (error) {
     //     console.error(error);
     //     res.status(500).send('Internal Server Error');
