@@ -442,3 +442,98 @@ ul {
     font-size: 12px;
     text-align: center;
 }
+
+/* Style for Chat Box */
+#chatbox {
+    margin-top: 20px;
+    width: 80%; 
+    max-width: 600px; 
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+    margin: 0 auto; /* Center the chatbox horizontally */
+}
+
+label {
+    font-weight: bold;
+}
+
+#question {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none; /* Removing the default input focus outline */
+}
+
+#ask {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adding transition for smoother hover effect */
+}
+
+#ask:hover {
+    background-color: #45a049;
+}
+
+/* Style for Answer Bubble */
+.bubble {
+    position: relative;
+    background-color: #e6e6e6;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    max-width: 80%;
+    word-wrap: break-word; /* Ensuring long words break properly */
+}
+
+/* Image inside Answer Bubble */
+.bubble img {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 50px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Making the image round */
+    border: 2px solid #fff; /* Adding a white border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adding a shadow */
+}
+
+
+/* Center align the chatbox */
+.center {
+    text-align: center;
+}
+
+/* Align answer bubble to the center */
+#answer {
+    margin: 10px auto;
+    width: 80%; /* Adjust the width as needed */
+}
+
+/* Style for the "Ask Another Question" button */
+.ask-another {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Adding transition for smoother hover effect */
+}
+
+.ask-another:hover {
+    background-color: #45a049;
+}
+
+/* Center align the button */
+.center {
+    text-align: center;
+}
