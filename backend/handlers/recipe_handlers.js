@@ -8,6 +8,7 @@ async function getAllRecipes(req, res) {
     // console.log("Find all recipes");
     let query = {};
     const { dietary } = req.query;
+    console.log(dietary);
 
     if (dietary && dietary.length > 0) {
         query = { 'categories.dietCategory': { $in: dietary } };
