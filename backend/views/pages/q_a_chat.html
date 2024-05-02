@@ -14,17 +14,13 @@
         <a href="index" class="logo">Sensitivity Savors</a>
     </div>
     <div class="nav">
-        <a href="index">Home</a>
-        <a href="form">Form</a>
-        <a href="all_recipes">All Recipes</a>
-        <a class="active" href="q_a_chat">Q&A Chatbot</a>
+        <a href="http://localhost:3000/index">Home</a>
+        <a href="http://localhost:3000/form">Form</a>
+        <a href="http://localhost:3000/all_recipes">All Recipes</a>
+        <a class="active" href="http://localhost:3000/q_a_chat">Q&A Chatbot</a>
     </div>  
     
-    <!-- NEED TO UPDATE THIS FOR Q&A CHAT BOT -->
     <body>
-        <div class="filter-button">
-            <a href="#" class="filter-link">Filter <i class="material-icons">filter_list</i></a>
-        </div>
         <h1>Q&A Chat</h1>
         <div>
             <form id="chatbox" action="http://127.0.0.1:8000/query" method="POST" onsubmit="askChatBot(e)">
@@ -38,8 +34,12 @@
             </form>
         </div>
         {% if pred %}
-        <div>
-            <p id="answer">{{ pred.answer }}</p>
+        <div class="center">
+            <div class="bubble" id="answer">
+                <img src="https://www.shutterstock.com/image-vector/illustration-chef-food-robot-character-600nw-2079445048.jpg" alt="Chef Robot" />
+                <p id="answer">{{ pred.answer }}</p>
+                <a href="http://localhost:3000/q_a_chat" class="ask-another">Ask Another Question</a>
+            </div>
         </div>
         {% endif %}
         <script src="http://localhost:3000/js/scripts.js"></script>
