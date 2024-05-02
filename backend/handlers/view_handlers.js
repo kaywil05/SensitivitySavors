@@ -17,25 +17,32 @@ async function formPageHandler(req, res) {
 
 
 async function recipesPageHandler(req, res) {
-    const recipes = await recipeHandlers.getAllRecipes(req, res);
-
-    //extract filter from query parameters
-    const {dietary} = req.query;
-
-    let query = {};
-    if(dietary){
-        query = {dietCategory: {$in:Array.isArray(dietary) ? dietary : [dietary] }};
-    }
-    console.log(dietary);
-
-
     try {
-        const recipes = dietary ? await Recipe.find(query) : await Recipe.find();
-        res.render('pages/all_recipes', { recipes : recipes});
+        const recipes = await recipeHandlers.getAllRecipes(req, res);
+        res.render('pages/all_recipes', { recipes });
     } catch (error) {
         console.error(error);
         res.status(500).send('Internal Server Error');
     }
+    // const recipes = await recipeHandlers.getAllRecipes(req, res);
+
+    // //extract filter from query parameters
+    // const {dietary} = req.query;
+
+    // let query = {};
+    // if(dietary){
+    //     query = {dietCategory: {$in:Array.isArray(dietary) ? dietary : [dietary] }};
+    // }
+    // console.log(dietary);
+
+
+    // try {
+    //     const recipes = dietary ? await Recipe.find(query) : await Recipe.find();
+    //     res.render('pages/all_recipes', { recipes : recipes});
+    // } catch (error) {
+    //     console.error(error);
+    //     res.status(500).send('Internal Server Error');
+    // }
 }
 
 function qaPageHandler(req, res) {
