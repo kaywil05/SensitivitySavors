@@ -1,8 +1,18 @@
 # FAQ Bot
 
-## Requirements:
+## Requirements
 
-- Python 3.8, pytorch, transformers, sentence-transformers, pandas, uvicorn, pydantic
+- Install miniconda3 from the office [website](https://docs.anaconda.com/free/miniconda/index.html)
+- Python 3.8, pytorch, transformers, sentence-transformers, pandas, uvicorn, pydantic fastapi
+  
+```shell
+conda new torchenv python=3.8
+conda activate torchenv
+conda install pandas
+conda install pytorch::pytorch torchvision torchaudio -c pytorch
+pip install transformers sentence-transformers
+pip install uvicorn[standard] fastapi pydantic
+```
 
 ## How to run server
 
