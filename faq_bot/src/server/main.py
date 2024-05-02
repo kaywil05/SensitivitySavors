@@ -3,21 +3,24 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from contextlib import asynccontextmanager
 from fastapi.responses import HTMLResponse
-# from fastapi.staticfiles import StaticFiles
+from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import os
 from model import load_all_models
-os.environ['HF_HOME'] = '../../huggingface_cache/model_cache'
-os.environ['HF_DATASETS_CACHE'] = '../../huggingface_cache/data_cache'
+
+os.environ["HF_HOME"] = "../../huggingface_cache/model_cache"
+os.environ["HF_DATASETS_CACHE"] = "../../huggingface_cache/data_cache"
 
 
 class QItem(BaseModel):
     question: str
 
+
 class PredictionAnswer(BaseModel):
     score: float
     question: str
     answer: str
+
 
 faq_model = None
 
@@ -27,18 +30,22 @@ async def lifespan(app: FastAPI):
     global faq_model
     faq_model = load_all_models()
     yield
-    print('Shutting down the model...')
+    print("Shutting down the model...")
+
 
 app = FastAPI(lifespan=lifespan)
-# app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/backend", StaticFiles(directory="../../../backend/public"), name="static")
 templates = Jinja2Templates(directory="../../../backend/views/pages")
-# @app.get("/")
-# def root():
-#     return {"message": "Hello World"}
+
 
 @app.post("/query")
-async def handle_question(question: str = Form(...)) -> dict:
-    print(question)
+# async def handle_question(question: str = Form(...)) -> dict:
+async def handle_question(request: Request) -> dict:
+    async with request.form() as form:
+        question = form.get("question")
+        print(question)
+    # return {"hello": "world"}
+    # print(question)
     pred = faq_model.get_answer(question)
     print(pred)
     # return {
@@ -47,13 +54,18 @@ async def handle_question(question: str = Form(...)) -> dict:
     #     "answer": pred["Answer"],
     # }
     return templates.TemplateResponse(
-        name="q_a_chat.ejs",
+        name="q_a_chat.html",
         context={
-            "request": None
+            "request": request,
             "question": question,
-            "pred": pred
-        }
+            "pred": {
+                "score": pred["Score"],
+                "question": pred["Question"],
+                "answer": pred["Answer"],
+            },
+        },
     )
+
 
 # @app.post("/query")
 # async def handle_question(req: Request) -> dict:
@@ -73,5 +85,3 @@ async def handle_question(question: str = Form(...)) -> dict:
 #     q = request.question
 #     a = faq_model.get_answer(q)
 #     return a
-
-

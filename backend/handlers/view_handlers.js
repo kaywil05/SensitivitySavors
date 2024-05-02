@@ -27,7 +27,10 @@ async function recipesPageHandler(req, res) {
 }
 
 function qaPageHandler(req, res) {
-    res.render("pages/q_a_chat");
+    res.render("pages/q_a_chat", {
+        question: undefined,
+        pred: undefined
+    });
 }
 
 module.exports = {
