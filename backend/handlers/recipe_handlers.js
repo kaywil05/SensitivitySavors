@@ -88,7 +88,6 @@ async function findRecipeByID(req, res) {
     };
     // console.log(categories);
     // console.log(ingredients);
-    // TODO: Error handling here
     res.render(
         "pages/recipe_details",
         {recipe: recipe, ingredients: ingredients, categories: categories}
